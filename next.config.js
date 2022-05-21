@@ -4,7 +4,7 @@ module.exports = {
       "mongodb+srv://nglikwai:dse00com@cluster0.evmdw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     STRIPE_API_KEY: 'pk_test_51Knoj4H2OfjmfYRL3e8qXlXcfs8QxZr8YWgzeoojC9Cllqp8A0smTqalOAB5Q5v93VGvscObHqxFXITzok4okL9h00VTLNbdFs',
     STRIPE_SECRET_KEY: 'sk_test_51Knoj4H2OfjmfYRLczGv1hH5NU6TUx4iAtCZmfOrUvdI2ikGzCqPi9fIYmg25X3jPGFr25RIvqn9jfHG0dRFxyWf00DKJmQ6mG',
-    STRIPE_WEBHOOK_SECRET: 'whsec_6130d89feff20e68285c56376dd56edb38da9eff7b3f1537e133dcd0bfd412fa',
+    STRIPE_WEBHOOK_SECRET: 'whsec_WCAsELxKPFR2G54e14Q7n8ywWd1wOaen',
     CLOUDINARY_CLOUD_NAME: "nglikwai",
     CLOUDINARY_API_KEY: "394655583168552",
     CLOUDINARY_API_SECRET: "vFnjEXnhpBd8crXZWQDJoew5tCg",
