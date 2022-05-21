@@ -48,6 +48,7 @@
     "login":{
       "login":"登入",
       "email":"電郵",
+      "name":"用戶名稱",
       "password":"密碼",
       "forgot":"忘記密碼",
       "new_user":"新用戶",

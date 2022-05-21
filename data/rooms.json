@@ -486,5 +486,265 @@
         }
       ],
       "category": "King"
+  },
+  {
+    "name": "The Hive Sai Kung",
+    "pricePerNight": 40,
+    "description": "Your home away from home - a place to do business and get work done. A welcoming and homely workspace that offers hot desks, dedicated desks and offices with views of the green mountains and only 5 minutes walk from the sea. Specially designed for entrepreneurs and businesses who value both work and wellbeing.",
+    "address": " 西貢大網仔路5號",
+    "guestCapacity": 1,
+    "numOfBeds": 1,
+    "internet": true,
+    "breakfast": true,
+    "airConditioned": true,
+    "petsAllowed": false,
+    "roomCleaning": true,
+    "images": [
+      {
+        "public_id": "bookit/rooms/1_bzynlv",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/9c4ce293-abd0-409e-14d8-0c5b72a6be00/public"
+      },
+      {
+        "public_id": "bookit/rooms/2_s1u52n",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/1a3b8e58-16d5-4d43-7bcb-4312bc1c4600/public"
+      }
+    ],
+    "category": "King"
+  },
+  {
+    "name": "The Desk Leighton Centre",
+    "pricePerNight": 50,
+    "description": "theDesk禮頓中心 位於活力無限的銅鑼灣，佔地15,000平方尺，設計時尚，可發展個人事業或合作業務，設有不同種類的私人辦公室、固定辦公桌、流動辦公桌及活動場地，適合舉辦工作會議、演講、工作坊和公司派對。",
+    "address": "銅鑼灣禮頓道77號禮頓中心20樓",
+    "guestCapacity": 1,
+    "numOfBeds": 1,
+    "internet": true,
+    "breakfast": true,
+    "airConditioned": true,
+    "petsAllowed": false,
+    "roomCleaning": true,
+    "images": [
+      {
+        "public_id": "bookit/rooms/1_bzynlv",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/590ef7c1-3932-43f0-476d-0e66867eba00/public"
+      },
+      {
+        "public_id": "bookit/rooms/2_s1u52n",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/9e6e302d-1930-4a57-b7ee-b33d3cbdfb00/public"
+      }
+    ],
+    "category": "King"
+  },
+  {
+    "name": "Playground.work",
+    "pricePerNight": 45,
+    "description": "Work is fun when we embrace work-life balance and realize it in our everyday life. At playground.work, our coworking space embraces the ABW (Activity Based Workplace) concept and is truly a merge of lifestyle and work space, where it has been fine-tuned to provide the right environment and nuance for a satisfactory working standard and attitude to living and overall well-being.",
+    "address": "上環德輔道中 244-248 號東協商業大廈",
+    "guestCapacity": 1,
+    "numOfBeds": 1,
+    "internet": true,
+    "breakfast": true,
+    "airConditioned": true,
+    "petsAllowed": false,
+    "roomCleaning": true,
+    "images": [
+      {
+        "public_id": "bookit/rooms/1_bzynlv",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/14bd533b-4b66-4a20-f709-ca39ff56fd00/public"
+      },
+      {
+        "public_id": "bookit/rooms/2_s1u52n",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/31b0ffa7-d0f8-4d69-8e1b-88649e044500/public"
+      }
+    ],
+    "category": "King"
+  },
+  {
+    "name": "Garage Society Sheung Wan",
+    "pricePerNight": 40,
+    "description": "Conveniently located in the heart of the creative district, Garage Sheung Wan is ideal for lifestyle brands, creatives and digital nomads to connect and collaborate. A cosy workspace to connect with modern professionals and enjoy the friendly vibe at our coworking space Sheung Wan. Explore our flexible membership plans in Hong Kong in the heart of the creative district. ",
+    "address": "上環皇后大道西2-12號25-26樓",
+    "guestCapacity": 1,
+    "numOfBeds": 1,
+    "internet": true,
+    "breakfast": true,
+    "airConditioned": true,
+    "petsAllowed": false,
+    "roomCleaning": true,
+    "images": [
+      {
+        "public_id": "bookit/rooms/1_bzynlv",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/450ba8b1-8d58-4246-c43d-2cecdd90a100/public"
+      },
+      {
+        "public_id": "bookit/rooms/2_s1u52n",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/d4bd7cd0-c050-417b-365d-afb48c856200/public"
+      }
+    ],
+    "category": "King"
+  },
+  {
+    "name": "Heritage Cowork",
+    "pricePerNight": 200,
+    "description": "Conveniently located in the heart of the creative district, Garage Sheung Wan is ideal for lifestyle brands, creatives and digital nomads to connect and collaborate. A cosy workspace to connect with modern professionals and enjoy the friendly vibe at our coworking space Sheung Wan. Explore our flexible membership plans in Hong Kong in the heart of the creative district. ",
+    "address": "香港九龍油麻地砵蘭街68號五樓",
+    "guestCapacity": 1,
+    "numOfBeds": 1,
+    "internet": true,
+    "breakfast": true,
+    "airConditioned": true,
+    "petsAllowed": false,
+    "roomCleaning": true,
+    "images": [
+      {
+        "public_id": "bookit/rooms/1_bzynlv",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/c9f81d43-a97d-488f-b98d-a35b71c7ad00/public"
+      },
+      {
+        "public_id": "bookit/rooms/2_s1u52n",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/d04545ee-0454-49e4-0077-d24e9758b300/public"
+      }
+    ],
+    "category": "King"
+  },
+  {
+    "name": "The Desk Kerry Hotel",
+    "pricePerNight": 50,
+    "description": "theDesk嘉里酒店 座落於紅磡灣海濱的五星級酒店內，寧靜的社區蘊釀出充滿創造力及提升工作效率的氛圍。而且，工作空間內的交流及合作不再局限於會員之間，酒店的商務旅客亦會參與其中，為整個社區締造更多商機，非常適合創意專業人士，企業家和外籍專才。",
+    "address": "九龍紅磡灣紅鸞道38號嘉里酒店2樓",
+    "guestCapacity": 1,
+    "numOfBeds": 1,
+    "internet": true,
+    "breakfast": true,
+    "airConditioned": true,
+    "petsAllowed": false,
+    "roomCleaning": true,
+    "images": [
+      {
+        "public_id": "bookit/rooms/1_bzynlv",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/65cd2395-0733-4ebd-9b85-b856f1fe9200/public"
+      },
+      {
+        "public_id": "bookit/rooms/2_s1u52n",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/b87eb7c6-55a1-4a26-f80b-6de3e04b3e00/public"
+      }
+    ],
+    "category": "King"
+  },
+  {
+    "name": "WanderLoft",
+    "pricePerNight": 40,
+    "description": "WanderLoft是香港首個以設計師為中心的共享空間，能夠了解和促進設計師的工作方式。我們專注於建築工程施工和室內設計領域，旨在建立一個由設計各個行業的不同方面組成的社區，以便我們能够彼此分享資源、想法和機會。",
+    "address": "香港觀塘創業街9號22樓",
+    "guestCapacity": 1,
+    "numOfBeds": 1,
+    "internet": true,
+    "breakfast": true,
+    "airConditioned": true,
+    "petsAllowed": false,
+    "roomCleaning": true,
+    "images": [
+      {
+        "public_id": "bookit/rooms/1_bzynlv",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/06f6b387-579c-4ea4-dc3c-e7c623872500/public"
+      },
+      {
+        "public_id": "bookit/rooms/2_s1u52n",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/d340a3c0-4666-47f2-7658-e5c0d3e86e00/public"
+      }
+    ],
+    "category": "King"
+  },
+  {
+    "name": "中環皇后大道中162號On Building 23樓",
+    "pricePerNight": 40,
+    "description": "Our coworking space in Hong Kong's prime business district Located in a Grade-A office building, and just a few minutes of walk from both the Sheung Wan and Central MTR stations. Garage Central is ideal for regional teams and SMEs in the professional services industry.",
+    "address": "香港觀塘創業街9號22樓",
+    "guestCapacity": 1,
+    "numOfBeds": 1,
+    "internet": true,
+    "breakfast": true,
+    "airConditioned": true,
+    "petsAllowed": false,
+    "roomCleaning": true,
+    "images": [
+      {
+        "public_id": "bookit/rooms/1_bzynlv",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/dbba0ad3-924e-4f8e-83af-4bf872779600/public"
+      }
+    ],
+    "category": "King"
+  },
+  {
+    "name": "The HQ Cowork",
+    "pricePerNight": 38,
+    "description": "Our space is decided for freelancers, startups, SME who need a space to grow their business and to facilitate their work. We also have different rooms for meeting, photo/video shooting as well as workshop & event.",
+    "address": " 堅尼地城士美菲路12P號祥興工業大廈2樓A室",
+    "guestCapacity": 1,
+    "numOfBeds": 1,
+    "internet": true,
+    "breakfast": true,
+    "airConditioned": true,
+    "petsAllowed": false,
+    "roomCleaning": true,
+    "images": [
+      {
+        "public_id": "bookit/rooms/1_bzynlv",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/f89733f9-6798-43c0-f95c-3368452c3c00/public"
+      },
+      {
+        "public_id": "bookit/rooms/2_s1u52n",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/225335d6-cf8a-4de9-8fb9-14913fe5ae00/public"
+      }
+    ],
+    "category": "King"
+  },
+  {
+    "name": "千代工坊-葵興",
+    "pricePerNight": 100,
+    "description": "位於葵興華星街的Nexen Workshop千代工坊共享辦公室，交通便捷，從葵興地鐵站步行至公司只需5分鐘路程。葵興曾爲香港主要工業發展地域，附近一帶工業大廈林立。由於90年代末香港經濟體系轉型，開始有舊式工廠改建為新型工商業大樓。由於臨近全球第八大貨櫃港“葵興貨櫃碼頭”，因此工作坊就地取材，以此作爲室内設計主調，顔色鮮明迥異的貨櫃寓意不同行業企業匯聚于千代工坊，成爲一個整體，彼此互相扶持交流意念想法，煥發出活力生機。",
+    "address": "葵興華星街2號安達工業大廈13樓",
+    "guestCapacity": 1,
+    "numOfBeds": 1,
+    "internet": true,
+    "breakfast": true,
+    "airConditioned": true,
+    "petsAllowed": false,
+    "roomCleaning": true,
+    "images": [
+      {
+        "public_id": "bookit/rooms/1_bzynlv",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/db09bb4b-d821-4d7b-302e-9ce7597bee00/public"
+      },
+      {
+        "public_id": "bookit/rooms/2_s1u52n",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/3d1852de-4de4-4ef1-a746-9e08d9a89d00/public"
+      }
+    ],
+    "category": "King"
+  },
+  {
+    "name": "THE Design",
+    "pricePerNight": 50,
+    "description": "THE Design共享工作間是theDesk的協作網絡地點，位於沙田石門。空間設計非常獨特，刻意注重每個細節，高樓底設計大幅增強空間感，間格亦可靈活運用。這個工作空間特別適合從事創意產業或是本身為設計師的一群，身處空間內就能激發創意靈感。除了欣賞美學設計，友善的社區夥伴以及室內、室外的共用空間也同樣吸引，是沙田區內罕見的共享工作間。",
+    "address": "沙田源順圍5-7號沙田工業中A座6樓609室",
+    "guestCapacity": 1,
+    "numOfBeds": 1,
+    "internet": true,
+    "breakfast": true,
+    "airConditioned": true,
+    "petsAllowed": false,
+    "roomCleaning": true,
+    "images": [
+      {
+        "public_id": "bookit/rooms/1_bzynlv",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/d44fc0c6-129c-4028-11c4-959d19a45100/public"
+      },
+      {
+        "public_id": "bookit/rooms/2_s1u52n",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/43c46e2d-7eca-4e17-7823-321957c6b200/public"
+      }
+    ],
+    "category": "King"
   }
 ]
