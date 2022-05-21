@@ -19,11 +19,18 @@ cloudinary.config({
 // Register user   =>   /api/auth/register
 const registerUser = catchAsyncErrors(async (req, res) => {
 
-    const result = await cloudinary.v2.uploader.upload(req.body.avatar, {
-        folder: 'bookit/avatars',
-        width: '150',
-        crop: 'scale'
-    })
+    let result = {};
+    result.public_id = 'me_1'
+    result.secure_url = 'https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/2ee7f26d-d208-49b1-6fc0-eed2d81ca000/public'
+
+    if (req.body.avatar) {
+        result = await cloudinary.v2.uploader.upload(req.body.avatar, {
+            folder: 'bookit/avatars',
+            width: '150',
+            crop: 'scale'
+        })
+    }
+
 
     const { name, email, password } = req.body;
 
