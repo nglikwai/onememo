@@ -18,7 +18,7 @@ module.exports = {
     NEXTAUTH_URL: "https://bookit-dse00.vercel.app"
   },
   images: {
-    domains: ["res.cloudinary.com","pix8.agoda.net"],
+    domains: ["cdn.flowtheroom.com"],
   },
 };
 

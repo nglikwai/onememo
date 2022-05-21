@@ -1,338 +1,490 @@
 [
   {
-    "name": "Charming Studio < 10 Miles to Wells' Beaches!",
+    "name": "荃灣溫室",
     "pricePerNight": 168,
-    "description": "A friendly atmosphere and natural delights await your visit to the town of Wells! Stay at this well-equipped 1-bath studio and enjoy easy access to several beaches, including Wells Beach and Drakes Island Beach, as well as Rachel Carson National Wildlife Refuge - the best spot for wildlife viewing just 8 miles away. Not to mention, with the downtown area just 10 minutes from the vacation rental,",
-    "address": "4667 Bicetown Street, New York, NY, 10004",
+    "description": "Desk-one (溫室) 是個閱讀、工作、自修的共享空間。 整個概念於2016年初開始籌備，並在同年10月正式開設銅鑼灣店，及在2017年5月擴充至旺角。",
+    "address": " 荃灣沙咀道289號恒生荃灣大廈21樓",
     "guestCapacity": 1,
     "numOfBeds": 1,
     "internet": true,
     "breakfast": true,
-    "airConditioned": false,
+    "airConditioned": true,
     "petsAllowed": false,
     "roomCleaning": true,
     "images": [
       {
         "public_id": "bookit/rooms/1_bzynlv",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590762/bookit/rooms/1_bzynlv.jpg"
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/2ee7f26d-d208-49b1-6fc0-eed2d81ca000/public"
       },
       {
         "public_id": "bookit/rooms/2_s1u52n",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590761/bookit/rooms/2_s1u52n.jpg"
-      }
-    ],
-    "category": "King"
-  },
-  {
-    "name": "Picturesque 2-Story Farmhouse w/Private Hot Tub",
-    "pricePerNight": 242,
-    "description": "Find plenty of space for a family or a large group at this picturesque Wells home, the perfect spot for a relaxing getaway in charming, quintessential Maine style! Spend your days on the beautiful nearby beaches, and come home to a large backyard and orchard where your kids can play, as well as a patio with a gas grill for barbecues on summer afternoons.",
-    "address": "200 Olympic Dr, Stafford, VS, 22554",
-    "guestCapacity": 2,
-    "numOfBeds": 2,
-    "internet": true,
-    "breakfast": false,
-    "airConditioned": true,
-    "petsAllowed": false,
-    "roomCleaning": true,
-    "images": [
-      {
-        "public_id": "bookit/rooms/3_quuli7.jpg",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590762/bookit/rooms/3_quuli7.jpg"
-      }
-    ],
-    "category": "Twins"
-  },
-  {
-    "name": "Downtown Portsmouth Private Getaway! Hot Tub",
-    "pricePerNight": 85,
-    "description": "Absolutely the best location in Portsmouth! Beautifully furnished, this spacious and private home is perfectly suited for taking in all of the must-see sights and historic landmarks that make this vibrant city so unique. Situated near the banks of the Piscataqua River just minutes away from Strawbery Banke Museum, Prescott Park, USS Albacore Museum, Market Square and more!",
-    "address": "3747 Parkway Street, Apple Valley, CA, 92307",
-    "guestCapacity": 3,
-    "numOfBeds": 2,
-    "internet": true,
-    "breakfast": true,
-    "airConditioned": true,
-    "petsAllowed": true,
-    "roomCleaning": false,
-    "images": [
-      {
-        "public_id": "bookit/rooms/4_sju0ql",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590765/bookit/rooms/4_sju0ql.jpg"
-      }
-    ],
-    "category": "King"
-  },
-  {
-    "name": "Spacious Suite in a quiet Boston neighborhood.",
-    "pricePerNight": 95,
-    "description": "Our largest room with a queen bed and foldable sofa. Comfortably fits 2-3 adults, four adults maximum. Decorated with Irish-themed colors and arts. It has a private bathroom with a shower, equipped with smart TV, mini-fridge, desk, chairs. Enjoy City views at the sitting area by the window. Located on the 3rd floor with no elevator.",
-    "address": "224 Cherry St, Buffalo, NY, 14202",
-    "guestCapacity": 6,
-    "numOfBeds": 3,
-    "internet": true,
-    "breakfast": true,
-    "airConditioned": true,
-    "petsAllowed": false,
-    "roomCleaning": true,
-    "images": [
-      {
-        "public_id": "bookit/rooms/5_jmydt6",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590762/bookit/rooms/5_jmydt6.jpg"
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/e2aeef8d-999a-462e-8832-227d3ede0f00/public"
       },
       {
-        "public_id": "bookit/rooms/6_nwmr5f",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590764/bookit/rooms/6_nwmr5f.jpg"
-      }
-    ],
-    "category": "Single"
-  },
-  {
-    "name": "Shangri-La Hotel, Washington",
-    "pricePerNight": 105,
-    "description": "Our largest room with a queen bed and foldable sofa. Comfortably fits 2-3 adults, four adults maximum. Decorated with Irish-themed colors and arts. It has a private bathroom with a shower, equipped with smart TV, mini-fridge, desk, chairs. Enjoy City views at the sitting area by the window. Located on the 3rd floor with no elevator.",
-    "address": "4724  Mudlick Road, Yakima, WA, 98902",
-    "guestCapacity": 2,
-    "numOfBeds": 1,
-    "internet": true,
-    "breakfast": true,
-    "airConditioned": true,
-    "petsAllowed": false,
-    "roomCleaning": true,
-    "images": [
-      {
-        "public_id": "bookit/rooms/7_hshhzq",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590764/bookit/rooms/7_hshhzq.jpg"
+        "public_id": "bookit/rooms/2_s1u52n",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/9562584a-50b2-41a8-52a7-6d7803282800/public"
       }
     ],
     "category": "King"
   },
   {
-    "name": "Hotel Chimayo de Santa Fe Rooms",
-    "pricePerNight": 36,
-    "description": "Our largest room with a queen bed and foldable sofa. Comfortably fits 2-3 adults, four adults maximum. Decorated with Irish-themed colors and arts. It has a private bathroom with a shower, equipped with smart TV, mini-fridge, desk, chairs. Enjoy City views at the sitting area by the window. Located on the 3rd floor with no elevator.",
-    "address": "1029  Godfrey Street, Portland, OR, 97205",
-    "guestCapacity": 2,
-    "numOfBeds": 2,
-    "internet": true,
-    "breakfast": true,
-    "airConditioned": true,
-    "petsAllowed": false,
-    "roomCleaning": true,
-    "images": [
-      {
-        "public_id": "bookit/rooms/8_crn0xy",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590765/bookit/rooms/8_crn0xy.jpg"
-      }
-    ],
-    "category": "Twins"
-  },
-  {
-    "name": "Hotel Garni Ischgl ☆ 4 star room comfort",
-    "pricePerNight": 82,
-    "description": "Our largest room with a queen bed and foldable sofa. Comfortably fits 2-3 adults, four adults maximum. Decorated with Irish-themed colors and arts. It has a private bathroom with a shower, equipped with smart TV, mini-fridge, desk, chairs. Enjoy City views at the sitting area by the window. Located on the 3rd floor with no elevator.",
-    "address": "2645  Parrish Avenue, SAINT LOUIS, MO, 63116",
-    "guestCapacity": 5,
-    "numOfBeds": 3,
-    "internet": true,
-    "breakfast": true,
-    "airConditioned": true,
-    "petsAllowed": false,
-    "roomCleaning": false,
-    "images": [
-      {
-        "public_id": "bookit/rooms/9_konrjf",
-        "url": "https://pix8.agoda.net/hotelImages/199/-1/5053587cdba1f2013a8fa5c6c6eb428c.jpg?ca=25&ce=0&s=1024x768"
-      }
-    ],
-    "category": "Single"
-  },
-  {
-    "name": "The Spa at Base Camp at Kerry Hotel",
-    "pricePerNight": 76,
-    "description": "Our largest room with a queen bed and foldable sofa. Comfortably fits 2-3 adults, four adults maximum. Decorated with Irish-themed colors and arts. It has a private bathroom with a shower, equipped with smart TV, mini-fridge, desk, chairs. Enjoy City views at the sitting area by the window. Located on the 3rd floor with no elevator.",
-    "address": "3118  Red Hawk Road, Garfield, MN, 56332",
-    "guestCapacity": 2,
-    "numOfBeds": 1,
-    "internet": true,
-    "breakfast": false,
-    "airConditioned": true,
-    "petsAllowed": false,
-    "roomCleaning": true,
-    "images": [
-      {
-        "public_id": "bookit/rooms/10_w8w8yi",
-        "url": "https://pix8.agoda.net/hotelImages/7459456/0/4e820b05d2c341444f8971e324aadff2.jpg?ca=23&ce=0&s=1024x768"
-      }
-    ],
-    "category": "Single"
-  },
-  {
-    "name": "Charming Studio < 10 Miles to Wells' Beaches!",
-    "pricePerNight": 168,
-    "description": "A friendly atmosphere and natural delights await your visit to the town of Wells! Stay at this well-equipped 1-bath studio and enjoy easy access to several beaches, including Wells Beach and Drakes Island Beach, as well as Rachel Carson National Wildlife Refuge - the best spot for wildlife viewing just 8 miles away. Not to mention, with the downtown area just 10 minutes from the vacation rental,",
-    "address": "4667 Bicetown Street, New York, NY, 10004",
+    "name": "旺角溫室",
+    "pricePerNight": 44,
+    "description": "Desk-one (溫室) 是個閱讀、工作、自修的共享空間。 整個概念於2016年初開始籌備，並在同年10月正式開設銅鑼灣店，及在2017年5月擴充至旺角。",
+    "address": " 旺角山東街47-51號中僑商業大廈23樓",
     "guestCapacity": 1,
     "numOfBeds": 1,
     "internet": true,
     "breakfast": true,
-    "airConditioned": false,
+    "airConditioned": true,
     "petsAllowed": false,
     "roomCleaning": true,
     "images": [
       {
         "public_id": "bookit/rooms/1_bzynlv",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590762/bookit/rooms/1_bzynlv.jpg"
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/52dcc058-6e90-417b-f9df-1ece16239a00/public"
       },
       {
         "public_id": "bookit/rooms/2_s1u52n",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590761/bookit/rooms/2_s1u52n.jpg"
-      }
-    ],
-    "category": "King"
-  },
-  {
-    "name": "Picturesque 2-Story Farmhouse w/Private Hot Tub",
-    "pricePerNight": 242,
-    "description": "Find plenty of space for a family or a large group at this picturesque Wells home, the perfect spot for a relaxing getaway in charming, quintessential Maine style! Spend your days on the beautiful nearby beaches, and come home to a large backyard and orchard where your kids can play, as well as a patio with a gas grill for barbecues on summer afternoons.",
-    "address": "200 Olympic Dr, Stafford, VS, 22554",
-    "guestCapacity": 2,
-    "numOfBeds": 2,
-    "internet": true,
-    "breakfast": false,
-    "airConditioned": true,
-    "petsAllowed": false,
-    "roomCleaning": true,
-    "images": [
-      {
-        "public_id": "bookit/rooms/3_quuli7.jpg",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590762/bookit/rooms/3_quuli7.jpg"
-      }
-    ],
-    "category": "Twins"
-  },
-  {
-    "name": "Downtown Portsmouth Private Getaway! Hot Tub",
-    "pricePerNight": 85,
-    "description": "Absolutely the best location in Portsmouth! Beautifully furnished, this spacious and private home is perfectly suited for taking in all of the must-see sights and historic landmarks that make this vibrant city so unique. Situated near the banks of the Piscataqua River just minutes away from Strawbery Banke Museum, Prescott Park, USS Albacore Museum, Market Square and more!",
-    "address": "3747 Parkway Street, Apple Valley, CA, 92307",
-    "guestCapacity": 3,
-    "numOfBeds": 2,
-    "internet": true,
-    "breakfast": true,
-    "airConditioned": true,
-    "petsAllowed": true,
-    "roomCleaning": false,
-    "images": [
-      {
-        "public_id": "bookit/rooms/4_sju0ql",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590765/bookit/rooms/4_sju0ql.jpg"
-      }
-    ],
-    "category": "King"
-  },
-  {
-    "name": "Royal Hotel",
-    "pricePerNight": 105,
-    "description": "Our largest room with a queen bed and foldable sofa. Comfortably fits 2-3 adults, four adults maximum. Decorated with Irish-themed colors and arts. It has a private bathroom with a shower, equipped with smart TV, mini-fridge, desk, chairs. Enjoy City views at the sitting area by the window. Located on the 3rd floor with no elevator.",
-    "address": "224 Cherry St, Buffalo, Mong Kok, 14202",
-    "guestCapacity": 6,
-    "numOfBeds": 3,
-    "internet": true,
-    "breakfast": true,
-    "airConditioned": true,
-    "petsAllowed": false,
-    "roomCleaning": true,
-    "images": [
-      {
-        "public_id": "bookit/rooms/5_jmydt6",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590762/bookit/rooms/5_jmydt6.jpg"
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/22623387-e5a9-4611-65b2-0bf18e67cf00/public"
       },
       {
-        "public_id": "bookit/rooms/6_nwmr5f",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590764/bookit/rooms/6_nwmr5f.jpg"
-      }
-    ],
-    "category": "Single"
-  },
-  {
-    "name": "365 Harbour Hotel",
-    "pricePerNight": 105,
-    "description": "Our largest room with a queen bed and foldable sofa. Comfortably fits 2-3 adults, four adults maximum. Decorated with Irish-themed colors and arts. It has a private bathroom with a shower, equipped with smart TV, mini-fridge, desk, chairs. Enjoy City views at the sitting area by the window. Located on the 3rd floor with no elevator.",
-    "address": "4724  Mudlick Road, Tsing Yi, WA, 98902",
-    "guestCapacity": 2,
-    "numOfBeds": 1,
-    "internet": true,
-    "breakfast": true,
-    "airConditioned": true,
-    "petsAllowed": false,
-    "roomCleaning": true,
-    "images": [
-      {
-        "public_id": "bookit/rooms/7_hshhzq",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590764/bookit/rooms/7_hshhzq.jpg"
+        "public_id": "bookit/rooms/2_s1u52n",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/9b30f53c-59e9-4ce7-a748-461031bc7100/public"
       }
     ],
     "category": "King"
   },
   {
-    "name": "Hotel Chimayo de Santa Fe Rooms",
-    "pricePerNight": 36,
-    "description": "Our largest room with a queen bed and foldable sofa. Comfortably fits 2-3 adults, four adults maximum. Decorated with Irish-themed colors and arts. It has a private bathroom with a shower, equipped with smart TV, mini-fridge, desk, chairs. Enjoy City views at the sitting area by the window. Located on the 3rd floor with no elevator.",
-    "address": "1029  Godfrey Street, Portland, OR, 97205",
-    "guestCapacity": 2,
-    "numOfBeds": 2,
-    "internet": true,
-    "breakfast": true,
-    "airConditioned": true,
-    "petsAllowed": false,
-    "roomCleaning": true,
-    "images": [
-      {
-        "public_id": "bookit/rooms/8_crn0xy",
-        "url": "https://res.cloudinary.com/bookit/image/upload/v1618590765/bookit/rooms/8_crn0xy.jpg"
-      }
-    ],
-    "category": "Twins"
-  },
-  {
-    "name": "Hotel Garni Ischgl ☆ 4 star room comfort",
-    "pricePerNight": 82,
-    "description": "Our largest room with a queen bed and foldable sofa. Comfortably fits 2-3 adults, four adults maximum. Decorated with Irish-themed colors and arts. It has a private bathroom with a shower, equipped with smart TV, mini-fridge, desk, chairs. Enjoy City views at the sitting area by the window. Located on the 3rd floor with no elevator.",
-    "address": "2645  Parrish Avenue, SAINT LOUIS, MO, 63116",
-    "guestCapacity": 5,
-    "numOfBeds": 3,
-    "internet": true,
-    "breakfast": true,
-    "airConditioned": true,
-    "petsAllowed": false,
-    "roomCleaning": false,
-    "images": [
-      {
-        "public_id": "bookit/rooms/9_konrjf",
-        "url": "https://pix8.agoda.net/hotelImages/7459456/0/4e820b05d2c341444f8971e324aadff2.jpg?ca=23&ce=0&s=1024x768"
-      }
-    ],
-    "category": "Single"
-  },
-  {
-    "name": "Polo Hotel",
-    "pricePerNight": 76,
-    "description": "Our largest room with a queen bed and foldable sofa. Comfortably fits 2-3 adults, four adults maximum. Decorated with Irish-themed colors and arts. It has a private bathroom with a shower, equipped with smart TV, mini-fridge, desk, chairs. Enjoy City views at the sitting area by the window. Located on the 3rd floor with no elevator.",
-    "address": "3118  Red Hawk Road, Garfield, MN, 56332",
-    "guestCapacity": 2,
+    "name": "銅鑼灣溫室",
+    "pricePerNight": 44,
+    "description": "成立Desk-one的想法源於香港的嚴重土地問題，缺乏專門為工作及溫習而設計的寧靜及優質空間。 由中學生準備公開試",
+    "address": "銅鑼灣禮頓道9-11號合誠大廈18樓",
+    "guestCapacity": 1,
     "numOfBeds": 1,
     "internet": true,
-    "breakfast": false,
+    "breakfast": true,
     "airConditioned": true,
     "petsAllowed": false,
     "roomCleaning": true,
     "images": [
       {
-        "public_id": "bookit/rooms/10_w8w8yi",
-        "url": "https://pix8.agoda.net/hotelImages/7459456/0/4e820b05d2c341444f8971e324aadff2.jpg?ca=23&ce=0&s=1024x768"
+        "public_id": "bookit/rooms/1_bzynlv",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/3dca9e16-abfd-439d-1b03-68d3cbad8800/public"
+      },
+      {
+        "public_id": "bookit/rooms/2_s1u52n",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/167ad19e-6e94-4da3-0ec2-023dc710d700/public"
       }
     ],
-    "category": "Single"
+    "category": "King"
+  },
+  {
+    "name": "咕嚕館",
+    "pricePerNight": 44,
+    "description": "成立Desk-one的想法源於香港的嚴重土地問題，缺乏專門為工作及溫習而設計的寧靜及優質空間。 由中學生準備公開試",
+    "address": "灣仔電氣街1號1A舖",
+    "guestCapacity": 1,
+    "numOfBeds": 1,
+    "internet": true,
+    "breakfast": true,
+    "airConditioned": true,
+    "petsAllowed": false,
+    "roomCleaning": true,
+    "images": [
+      {
+        "public_id": "bookit/rooms/1_bzynlv",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/2f2eda2c-e23e-4ca6-18cc-d17090f4b000/public"
+      },
+      {
+        "public_id": "bookit/rooms/2_s1u52n",
+        "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/8f7b1370-7948-41c3-f559-d0b59d561500/public"
+      }
+    ],
+    "category": "King"
+  },
+  {
+      "name": "放鬆共享空間",
+      "pricePerNight": 148,
+      "description": "放ZONE是一個閱讀、工作、自修的共享空間。成立放ZONE的想法源於香港土地問題，共享空間是未來的趨勢。由中學生、大學生、及至freelancers都缺乏專門為工作及溫習而設計的寧靜及優質空間。自修室的侷促感，咖啡店的擠迫感，都紛紛令用家卻步，想尋覓另一種寧靜舒適的環境。​何不找多一個選擇。",
+      "address": "沙田石門京瑞廣場1期11樓E&F室",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/2b1e69ec-57d8-4b0d-a0af-14e18bc42100/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/12e405fd-d907-46c5-bdf1-c866fefece00/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "Mybase - Mongkok",
+      "pricePerNight": 128,
+      "description": "MyBASE 是個讓你稱心如意的空間。我們小至充電器、大至會議室都一應俱全。而我們友善可靠的工作人員會適切地提供協助，讓你完成工作。你可以將煩瑣的顧慮拋諸腦後，專心一致達成你心中所想。",
+      "address": "旺角彌敦道 562號 5-7 樓全層",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/893c499d-8c83-416e-5fa8-576296a77a00/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/9aacb32f-3676-4cf6-88d7-06dc872f9500/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "Focus",
+      "pricePerNight": 40,
+      "description": "當你入到嚟 focus 嘅空間，我哋希望你可以感受到嗰種與繁鬧都市隔絕嘅感覺，喺 focus 搵到只屬於自己嘅小空間，甚至係自己嘅世界，專注為你最重要嘅目標而奮鬥。",
+      "address": " 旺角彌敦道 574-576號和富商業大廈5樓",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/89ab2ffc-2665-474e-7a8d-ad1469144000/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/60c45f76-f1c6-433d-a2c8-2fb14014dd00/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "OONIQUE",
+      "pricePerNight": 108,
+      "description": "OONIQUE is located at the heart of Causeway Bay, a space providing flexible setting and rate options, and all things that helps with creativity, productivity and efficiency to co-study/co-work. Fully-furnished to be a study sanctuary and stylish meeting point for talented minds alike.",
+      "address": "銅鑼灣駱克道京都商業中心 11樓",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/2d9fde86-d4e6-4781-8db5-93df4e9cc500/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/a93713ca-4e18-413b-10b7-193ce875a800/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "MyBASE - Tsuen Wan",
+      "pricePerNight": 118,
+      "description": "MyBASE 是個讓你稱心如意的空間。我們小至充電器、大至會議室都一應俱全。而我們友善可靠的工作人員會適切地提供協助，讓你完成工作。你可以將煩瑣的顧慮拋諸腦後，專心一致達成你心中所想。",
+      "address": "荃灣楊屋道88號Plaza 88商場23樓G室",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/f8f0d4c8-2729-42b2-53d4-4860192d1300/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/62178f08-319e-44bb-21cb-dfeadf527700/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "憙酒店辦公空間",
+      "pricePerNight": 60,
+      "description": "憙酒店是位於尖沙咀的時尚精品飯店，距離地鐵尖東站僅幾步之遙。飯店價格經濟實惠，並提供免費 WiFi。 客房裝潢典雅，設有空調、可收看衛星和有線頻道的 LED 電視、iPod 基座、私人保險箱和迷你吧。 此住宿也被評選為香港最佳地理位置住宿之一！顧客滿意度比同區域其他住宿高。",
+      "address": "尖沙咀棉登徑7號",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/5c650c61-e7c4-4c3b-e4df-0023a7796600/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/57308fd9-f7f0-4a26-36e8-2deeb8219500/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "TEC Two Chinachem Central",
+      "pricePerNight": 90,
+      "description": "當代的德事商務中心以彙聚志同道合的專業人士為目標，旨在促進社區互動。每一個定制的私人樓層都提供高達 3000 平方英呎的靈活辦公空間，而我們的共享辦公區域則提供向所有 TEC 成員開放的可定制座位安排計劃。成員可以在不同的環境內得到啟發，會見 TEC 社區的其他成員，以及在精心設計的休息室內享用由我們的專業咖啡師精心製作的即磨咖啡。",
+      "address": "香港中環德輔道中26號中環華懋中心二期19樓",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/85d9da0f-8500-46c2-7f8a-3817dce3da00/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/828c69a5-4760-4d20-d68c-1496d1724000/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "TEC Prosperity Tower ",
+      "pricePerNight": 390,
+      "description": "位於市中心的豐盛創建大廈是香港中環商業區其中一座最新的大廈。它旨在提供現代和高效的體驗，設在香港最著名的中環商業區以提供便利。在位於豐盛創建大廈內的德事商務中心，我們提供了私人辦公室及虛擬辦公室服務這樣的靈活工作環境。我們的空間內設有符合人體工學的傢私座椅，并提供專業的會議及大會的設備來符合各種指定需求我們的空間亦經過貼心設計，支持及協助您有效力及有效率地拓展您的業務",
+      "address": "中環皇后大道中39號豐盛創建大廈26樓",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/48597a63-e481-4191-4993-73ba9b6fb600/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/81b0c788-148f-4497-20ee-8382e9201100/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "V-CO",
+      "pricePerNight": 350,
+      "description": "V-Co是香港銅鑼灣第一個提供便利共用工作空間的創業公司。我們的使命是培養勤奮，創造力和建立有意義的聯繫。提供靈活的解決方案及一個真正可持續的工作場所，絕對可以滿足您的工作要求。",
+      "address": "香港銅鑼灣登龍街18號9樓",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/24e985bb-6511-4728-a767-588831271400/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/796e9343-cfe0-4ed4-d32a-fe36e917c800/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "Metropolitan Workshop",
+      "pricePerNight": 300,
+      "description": "Café Le Lourve 坐落於中環士丹利街和砵典乍街之間的商業大廈，該區是香港的縮影——-新舊混集﹑中西合璧，成為一個充滿對比和活力的空間。此共享工作空間的設計就像巴黎街道上一個舒適的咖啡館， 入口大廳與巴黎的le Lourve十分相似，辦公室採用博物館中的許多偉大畫作裝飾。這個工作坊適合各行各業的人士，工作坊位置的有趣氛圍使其特別吸引海外遊客。此工作坊提供許多非固定辦公位置，專屬辦公位置和各種尺寸的辦公",
+      "address": "中環士丹利街50號信誠廣場3樓",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/b64b9df1-5163-476c-f869-9782a95cfd00/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/f021cb86-542e-4406-973f-7d0d67c95d00/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "Ooosh Coworking Kowloon",
+      "pricePerNight": 130,
+      "description": "經濟實惠和充滿活力的社區 - Ooosh是一個為自由工作者及初創而設的共享空間，讓來自創新行業與傳統企業產生火花的地方。",
+      "address": "荔枝角青山道道479-479A號8樓803室",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/b846ad44-b31e-4d35-2b2b-587ba7252d00/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/c09837fe-2094-4b2b-8765-3b1ab72ff000/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "MUSTARD SEED",
+      "pricePerNight": 150,
+      "description": "芥末種子代表著一種信念：最細小的種子可以茁壯成通天大樹；最卑微的開始也可以成就最宏大的成功故事。Mustard Seed著重為企業家及創意產業工作者建立聯繫網絡及平台，協助其事業成長，立足並成為行業先鋒。",
+      "address": "灣仔軒尼詩道288號英皇集團中心2樓",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/c50f49be-374e-429a-0652-7bf72d719600/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/76878851-b51e-499e-410b-a0a12b19d100/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "The Desk Sai Wan",
+      "pricePerNight": 50,
+      "description": "位處香港文化樞紐的得獎設計空間，曾獲設計獎項的共享工作空間，位於香港時尚西區，深受企業家和創意家歡迎，高聳樓底與美學細節將新舊元素完美結合。寬敞空間有助會員發展業務、開拓網絡，吸引社區鄰舍舉辦文化活動。",
+      "address": "香港西環皇后大道西511號",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/62842c7d-82ec-4c8b-3826-81a852115800/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/9faf8b08-3b75-4213-751d-d1a79a2fc100/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "The Desk 50",
+      "pricePerNight": 50,
+      "description": "位處香港文化樞紐的得獎設計空間，曾獲設計獎項的共享工作空間，位於香港時尚西區，深受企業家和創意家歡迎，高聳樓底與美學細節將新舊元素完美結合。寬敞空間有助會員發展業務、開拓網絡，吸引社區鄰舍舉辦文化活動。",
+      "address": "香港上環文咸東街50號Strand 50 2樓",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/fee78c89-aeaf-4ea9-4dda-de47dcf4fe00/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/f4bf5961-80f1-4951-85f4-f05682255800/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "Garage Society Wan Chai Jaffee",
+      "pricePerNight": 40,
+      "description": "With our new addition to Wan Chai, Garage’s community continues to grow to Jaffe Road with 6 floors in the recently upgraded Konnect Building. Offering a variety of workstyle solutions, Garage Jaffe Road is home to premium workspaces, private offices and dedicated floors. Our flexible and modern work environments are ideal for small teams from the professional services industry as well as modern corporates.",
+      "address": " 灣仔謝斐道303號凱聯10-15樓",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/55aec0cd-555b-4adb-0a7d-a0bd007ec400/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/abd31fd6-f65c-44cc-ef8a-ac83b1c00100/public"
+        }
+      ],
+      "category": "King"
+  },
+  {
+      "name": "The Hive Kennedy Town",
+      "pricePerNight": 40,
+      "description": "Conveniently located right next to Kennedy Town’s MTR station, this ex-industrial workspace is dedicated to fast growing companies, creative entrepreneurs and gives every member a chance to meet like minded people.",
+      "address": " 堅尼地城士美非路12P號祥興工業大廈6樓",
+      "guestCapacity": 1,
+      "numOfBeds": 1,
+      "internet": true,
+      "breakfast": true,
+      "airConditioned": true,
+      "petsAllowed": false,
+      "roomCleaning": true,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/11107515-9682-4a58-d2b6-de83e6d9fc00/public"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/4b901b65-a9c0-48dc-7d7d-b93fa5457f00/public"
+        }
+      ],
+      "category": "King"
   }
 ]
