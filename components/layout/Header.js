@@ -1,13 +1,15 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faMagnifyingGlass, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 import { loadUser } from "../../redux/actions/userActions";
 import { signOut } from "next-auth/client";
+import { useTranslation } from 'react-i18next'
 
 const Header = () => {
+  const { t } = useTranslation()
   const dispatch = useDispatch();
 
   const { user, loading } = useSelector((state) => state.loadedUser);
@@ -59,7 +61,9 @@ const Header = () => {
                     alt={user && user.name}
                     className="rounded-circle"
                   />
+                  
                 </figure>
+    
                 <span>{user && user.name}</span>
               </a>
   
@@ -71,19 +75,19 @@ const Header = () => {
                 {user.role === "admin" && (
                   <>
                     <Link href="/admin/rooms">
-                      <a className="dropdown-item">Rooms</a>
+                      <a className="dropdown-item">{t('header.manage_room')}</a>
                     </Link>
 
                     <Link href="/admin/bookings">
-                      <a className="dropdown-item">Bookings</a>
+                      <a className="dropdown-item">{t('header.manage_booking')}</a>
                     </Link>
 
                     <Link href="/admin/users">
-                      <a className="dropdown-item">Users</a>
+                      <a className="dropdown-item">{t('header.manage_users')}</a>
                     </Link>
 
                     <Link href="/admin/reviews">
-                      <a className="dropdown-item">Reviews</a>
+                      <a className="dropdown-item">{t('header.manage_review')}</a>
                     </Link>
 
                     <hr />
@@ -91,11 +95,11 @@ const Header = () => {
                 )}
 
                 <Link href="/bookings/me">
-                  <a className="dropdown-item">My Bookings</a>
+                  <a className="dropdown-item">{t('header.booking')}</a>
                 </Link>
 
                 <Link href="/me/update">
-                  <a className="dropdown-item">Profile</a>
+                  <a className="dropdown-item">{t('header.profile')}</a>
                 </Link>
 
                 <Link href="/">
@@ -103,7 +107,7 @@ const Header = () => {
                     className="dropdown-item text-danger"
                     onClick={logoutHandler}
                   >
-                    Logout
+                    {t('header.logout')}
                   </a>
                 </Link>
               </div>
@@ -112,7 +116,11 @@ const Header = () => {
             !loading && (
               <Link href="/login">
                 <a className="px-4 py-2 text-secondary bg float-right border rounded-pill">
-                  Login
+                <FontAwesomeIcon
+                    icon={faUser}
+                    color="#aaa"
+                    size="lg"
+                  />
                 </a>
               </Link>
             )

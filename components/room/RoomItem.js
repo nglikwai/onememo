@@ -2,11 +2,14 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
+import { useTranslation } from 'react-i18next'
 
 const RoomItem = ({ room }) => {
+
+  const { t } = useTranslation()
   return (
     <div className="col-sm-12 col-md-6 col-lg-3 my-3">
-      <div className="card p-2">
+      <div className="card pb-1">
         <Link href={`/room/${room._id}`}>
           <div style={{ cursor: "pointer" }}>
             <Image
@@ -27,7 +30,7 @@ const RoomItem = ({ room }) => {
 
           <div>
             <Price className="pt-2">
-             ${room.pricePerNight} / night
+             ${room.pricePerNight} / {t('home.night')}
             </Price>
 
             <div className="rating-outer">
@@ -36,7 +39,7 @@ const RoomItem = ({ room }) => {
                 style={{ width: `${(room.ratings / 5) * 100}%` }}
               ></div>
             </div>
-            <span id="no_of_reviews">({room.numOfReviews} Reviews)</span>
+            <span id="no_of_reviews">({room.numOfReviews} {t('home.review')})</span>
           </div>
 
 

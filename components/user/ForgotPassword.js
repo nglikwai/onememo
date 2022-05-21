@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import { toast } from 'react-toastify'
 import ButtonLoader from '../layout/ButtonLoader'
@@ -7,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { forgotPassword, clearErrors } from '../../redux/actions/userActions'
 
 const ForgotPassword = () => {
-
+    const { t } = useTranslation()
     const [email, setEmail] = useState('')
 
     const dispatch = useDispatch()
@@ -44,9 +45,9 @@ const ForgotPassword = () => {
         <div className="row wrapper">
             <div className="col-10 col-lg-5">
                 <form className="shadow-lg" onSubmit={submitHandler}>
-                    <h1 className="mb-3">Forgot Password</h1>
+                    <h1 className="mb-3">{t('login.forgot')}</h1>
                     <div className="form-group">
-                        <label htmlFor="email_field">Enter Email</label>
+                        <label htmlFor="email_field">{t('login.email')}</label>
                         <input
                             type="email"
                             id="email_field"
@@ -62,7 +63,7 @@ const ForgotPassword = () => {
                         className="btn btn-block py-3"
                         disabled={loading ? true : false}
                     >
-                        {loading ? <ButtonLoader /> : 'Send Email'}
+                        {loading ? <ButtonLoader /> : `${t('login.send')}`}
                     </button>
 
                 </form>

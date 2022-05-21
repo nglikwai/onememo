@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
+import { useTranslation } from 'react-i18next'
 
 const Search = () => {
-
+    const { t } = useTranslation()
     const [location, setLocation] = useState('');
     const [guests, setGuests] = useState('');
     const [category, setCategory] = useState('');
@@ -25,9 +26,9 @@ const Search = () => {
             <div className="row wrapper">
                 <div className="col-10 col-lg-5">
                     <form className="shadow-lg" onSubmit={submitHandler}>
-                        <h2 className="mb-3">Search Rooms</h2>
+                        <h2 className="mb-3">{t('search.search')}</h2>
                         <div className="form-group">
-                            <label htmlFor="location_field">Location</label>
+                            <label htmlFor="location_field">{t('search.location')}</label>
                             <input
                                 type="text"
                                 className="form-control"
@@ -39,7 +40,7 @@ const Search = () => {
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="guest_field">No. of Guests</label>
+                            <label htmlFor="guest_field">{t('search.guest')}</label>
                             <select
                                 className="form-control"
                                 id="guest_field"
@@ -53,20 +54,20 @@ const Search = () => {
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="room_type_field">Room Type</label>
+                            <label htmlFor="room_type_field">{t('search.type')}</label>
                             <select
                                 className="form-control"
                                 id="room_type_field"
                                 value={category}
                                 onChange={(e) => setCategory(e.target.value)}
                             >
-                                {['King', 'Single', 'Twins'].map(category => (
+                                {[`${t('search.king')}`, `${t('search.single')}`, `${t('search.twins')}`].map(category => (
                                     <option key={category} value={category}>{category}</option>
                                 ))}
                             </select>
                         </div>
 
-                        <button type="submit" className="btn btn-block py-2">Search</button>
+                        <button type="submit" className="btn btn-block py-2">{t('search.search')}</button>
                     </form>
                 </div>
             </div>

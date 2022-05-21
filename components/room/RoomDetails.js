@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import Image from 'next/image'
-
+import { useTranslation } from 'react-i18next'
 import RoomFeatures from './RoomFeatures'
 import NewReview from '../review/NewReview'
 import ListReviews from '../review/ListReviews'
@@ -22,6 +22,7 @@ import getStripe from '../../utils/getStripe'
 import axios from 'axios'
 
 const RoomDetails = () => {
+    const { t } = useTranslation()
 
     const [checkInDate, setCheckInDate] = useState()
     const [checkOutDate, setCheckOutDate] = useState()
@@ -158,7 +159,7 @@ const RoomDetails = () => {
                     <div className="rating-outer">
                         <div className="rating-inner" style={{ width: `${(room.ratings / 5) * 100}%` }}></div>
                     </div>
-                    <span id="no_of_reviews">({room.numOfReviews} Reviews)</span>
+                    <span id="no_of_reviews">({room.numOfReviews} {t('home.review')})</span>
                 </div>
 
                 <Carousel hover='pause'>
@@ -179,7 +180,7 @@ const RoomDetails = () => {
 
                 <div className="row my-5">
                     <div className="col-12 col-md-6 col-lg-8">
-                        <h3>Description</h3>
+                        <h3>{t('room.description')}</h3>
                         <p>{room.description}</p>
 
                         <RoomFeatures room={room} />
@@ -188,12 +189,12 @@ const RoomDetails = () => {
 
                     <div className="col-12 col-md-6 col-lg-4">
                         <div className="booking-card shadow-lg p-4">
-                            <p className='price-per-night'><b>${room.pricePerNight}</b> / night</p>
+                            <p className='price-per-night'><b>${room.pricePerNight}</b> / {t('home.night')}</p>
 
                             <hr />
 
                             <p className="mt-5 mb-3">
-                                Pick Check In & Check Out Date
+                            {t('room.checkin')}
                             </p>
 
                             <DatePicker
@@ -209,15 +210,15 @@ const RoomDetails = () => {
                             />
 
                             {available === true &&
-                                <div className="alert alert-success my-3 font-weight-bold">Room is available. Book now.</div>
+                                <div className="alert alert-success my-3 font-weight-bold">{t('room.available')}</div>
                             }
 
                             {available === false &&
-                                <div className="alert alert-danger my-3 font-weight-bold">Room not available. Try different dates.</div>
+                                <div className="alert alert-danger my-3 font-weight-bold">{t('room.not_available')}</div>
                             }
 
                             {available && !user &&
-                                <div className="alert alert-danger my-3 font-weight-bold">Login to book room.</div>
+                                <div className="alert alert-danger my-3 font-weight-bold">{t('login.login')}</div>
                             }
 
                             {available && user &&
@@ -226,7 +227,7 @@ const RoomDetails = () => {
                                     onClick={() => bookRoom(room._id, room.pricePerNight)}
                                     disabled={bookingLoading || paymentLoading ? true : false}
                                 >
-                                    Pay - ${daysOfStay * room.pricePerNight}
+                                    {t('room.pay')} - ${daysOfStay * room.pricePerNight}
                                 </button>
                             }
 
@@ -239,7 +240,7 @@ const RoomDetails = () => {
                 {room.reviews && room.reviews.length > 0 ?
                     <ListReviews reviews={room.reviews} />
                     :
-                    <p><b>No Reviews on this room</b></p>
+                    <p><b>{t('room.no_review')}</b></p>
                 }
 
             </div>

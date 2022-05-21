@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-
+import '../i18n'
 import { wrapper } from '../redux/store'
 
 function MyApp({ Component, pageProps }) {

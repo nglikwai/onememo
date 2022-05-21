@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-
+import { useTranslation } from 'react-i18next'
 import Pagination from "react-js-pagination";
 
 import RoomItem from "./room/RoomItem";
@@ -12,6 +12,9 @@ import { toast } from "react-toastify";
 import { clearErrors } from "../redux/actions/roomActions";
 
 const Home = () => {
+
+  const { t } = useTranslation()
+
   const dispatch = useDispatch();
   const router = useRouter();
 
@@ -49,9 +52,8 @@ const Home = () => {
   return (
     <>
       <section id="rooms" className="container mt-5">
-
         <h2 className="mb-3 ml-2 stays-heading text-center">
-          {location ? `Rooms in ${location}` : "Recommand"}
+          {location ? `Rooms in ${location}` : `${t('home.recommand')}`}
         </h2>
 
         <div className="row">
@@ -73,10 +75,10 @@ const Home = () => {
             itemsCountPerPage={resPerPage}
             totalItemsCount={roomsCount}
             onChange={handlePagination}
-            nextPageText={"Next"}
-            prevPageText={"Prev"}
-            firstPageText={"First"}
-            lastPageText={"Last"}
+            nextPageText={`${t('home.next')}`}
+            prevPageText={`${t('home.prev')}`}
+            firstPageText={`${t('home.first')}`}
+            lastPageText={`${t('home.last')}`}
             itemClass="page-item"
             linkClass="page-link"
           />
