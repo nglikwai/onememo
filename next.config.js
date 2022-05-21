@@ -15,7 +15,7 @@ module.exports = {
     SMTP_PASSWORD: "3d1f03db5eee80",
     SMTP_FROM_NAME: "BOOKIT",
     SMTP_FROM_EMAIL: "noreply@bookit.com",
-    NEXTAUTH_URL: "https://bookit-dse00.vercel.app"
+    NEXTAUTH_URL: "https://onebook.dse00.com"
   },
   images: {
     domains: ["cdn.flowtheroom.com"],

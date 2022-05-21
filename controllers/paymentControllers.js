@@ -45,7 +45,6 @@ const stripCheckoutSession = catchAsyncErrors(async (req, res) => {
 
 // Create new booking after payment   =>   /api/webhook
 const webhookCheckout = catchAsyncErrors(async (req, res) => {
-
     const rawBody = await getRawBody(req);
 
     try {
@@ -82,7 +81,6 @@ const webhookCheckout = catchAsyncErrors(async (req, res) => {
                 paymentInfo,
                 paidAt: Date.now()
             })
-
             res.status(200).json({ success: true })
 
         }

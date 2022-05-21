@@ -9,6 +9,7 @@
     "seeder": "node utils/seeder"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@stripe/stripe-js": "^1.14.0",
@@ -16,6 +17,7 @@
     "bcryptjs": "^2.4.3",
     "cloudinary": "^1.25.1",
     "easyinvoice": "^1.0.112",
+    "i18next": "^21.8.3",
     "mdbreact": "^5.0.2",
     "moment": "^2.29.1",
     "moment-range": "^4.0.2",

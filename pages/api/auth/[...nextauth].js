@@ -14,15 +14,15 @@ export default NextAuth({
 
                 dbConnect();
 
-                const { email, password } = credentials;
+                const { name, password } = credentials;
 
                 // Check if email and password is entered
-                if (!email || !password) {
+                if (!name || !password) {
                     throw new Error('Please enter email or password');
                 }
 
                 // Find user in the database
-                const user = await User.findOne({ email }).select('+password')
+                const user = await User.findOne({ name }).select('+password')
 
                 if (!user) {
                     throw new Error('Invalid Email or Password')
