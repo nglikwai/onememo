@@ -8,9 +8,10 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toast } from 'react-toastify';
 
 import { clearErrors } from '../../redux/actions/bookingActions'
+import { useTranslation } from 'react-i18next'
 
 const MyBookings = () => {
-
+    const { t } = useTranslation()
     const dispatch = useDispatch()
 
     const { bookings, error } = useSelector(state => state.bookings)
@@ -27,27 +28,27 @@ const MyBookings = () => {
         const data = {
             columns: [
                 {
-                    label: 'Booking ID',
+                    label: `${t('booking.id')}`,
                     field: 'id',
                     sort: 'asc'
                 },
                 {
-                    label: 'Check In',
+                    label: `${t('booking.checkin')}`,
                     field: 'checkIn',
                     sort: 'asc'
                 },
                 {
-                    label: 'Check Out',
+                    label: `${t('booking.checkout')}`,
                     field: 'checkOut',
                     sort: 'asc'
                 },
                 {
-                    label: 'Amount Paid',
+                    label: `${t('booking.paid')}`,
                     field: 'amount',
                     sort: 'asc'
                 },
                 {
-                    label: 'Actions',
+                    label: `${t('booking.action')}`,
                     field: 'actions',
                     sort: 'asc'
                 }
@@ -128,7 +129,7 @@ const MyBookings = () => {
 
     return (
         <div className='container container-fluid'>
-            <h1 className='my-5'>My Bookings</h1>
+            <h1 className='my-5'>{t('booking.booking')}</h1>
 
             <MDBDataTable
                 data={setBookings()}

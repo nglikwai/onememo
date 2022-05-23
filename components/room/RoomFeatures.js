@@ -13,7 +13,7 @@ const RoomFeatures = ({ room }) => {
 
             <div className='room-feature'>
                 <i className="fa fa-cog fa-fw fa-bed" aria-hidden="true"></i>
-                <p>{room.numOfBeds} Beds</p>
+                <p>{room.numOfBeds} {t('room.bed')}</p>
             </div>
 
             <div className='room-feature'>
@@ -21,7 +21,7 @@ const RoomFeatures = ({ room }) => {
                     className={room.breakfast ? 'fa fa-check text-success' : 'fa fa-times text-danger'}
                     aria-hidden="true"
                 ></i>
-                <p>Breakfast</p>
+                <p>{t('room.breakfast')}</p>
             </div>
 
             <div className='room-feature'>
@@ -29,7 +29,7 @@ const RoomFeatures = ({ room }) => {
                     className={room.internet ? 'fa fa-check text-success' : 'fa fa-times text-danger'}
                     aria-hidden="true"
                 ></i>
-                <p>Internet</p>
+                <p>{t('room.internet')}</p>
             </div>
 
             <div className='room-feature'>
@@ -37,7 +37,7 @@ const RoomFeatures = ({ room }) => {
                     className={room.airConditioned ? 'fa fa-check text-success' : 'fa fa-times text-danger'}
                     aria-hidden="true"
                 ></i>
-                <p>Air Conditioned</p>
+                <p>{t('room.air_conditionor')}</p>
             </div>
 
             <div className='room-feature'>
@@ -45,7 +45,7 @@ const RoomFeatures = ({ room }) => {
                     className={room.petsAllowed ? 'fa fa-check text-success' : 'fa fa-times text-danger'}
                     aria-hidden="true"
                 ></i>
-                <p>Pets Allowed</p>
+                <p>{t('room.pet')}</p>
             </div>
 
             <div className='room-feature'>
@@ -53,7 +53,7 @@ const RoomFeatures = ({ room }) => {
                     className={room.roomCleaning ? 'fa fa-check text-success' : 'fa fa-times text-danger'}
                     aria-hidden="true"
                 ></i>
-                <p>Room Cleaning</p>
+                <p>{t('room.clean')}</p>
             </div>
 
         </div>

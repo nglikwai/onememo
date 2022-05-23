@@ -17,23 +17,37 @@
       "next":">",
       "first":"<<"
     },
+    "booking":{
+      "booking":"我的預訂",
+      "id":"預訂編號",
+      "checkin":"入坐時間",
+      "checkout":"離開時間",
+      "paid":"付款",
+      "action":""
+    },
     "search":{
       "search":"搜尋",
       "location":"地點",
-      "guest":"旅客人數",
+      "guest":"人數",
       "type":"房間種類",
       "single":"單人",
       "twins":"雙人",
       "king":"大床"
     },
     "room":{
-      "description":"房間",
-      "feature":"簡介",
+      "description":"簡介",
+      "feature":"內有",
       "checkin":"入住日期",
-      "available":"有空",
-      "not_available":"沒有空",
+      "available":"可以預訂",
+      "not_available":"選擇時段已滿",
       "pay":"付款",
-      "no_review":"沒有留言"
+      "no_review":"沒有留言",
+      "bed":"坐位",
+      "breakfast":"小食",
+      "internet":"Wi-Fi",
+      "air_conditionor":"冷氣",
+      "pet":"寵物",
+      "clean":"休息區"
     },
     "header":{
       "manage_booking":"管理預訂",
