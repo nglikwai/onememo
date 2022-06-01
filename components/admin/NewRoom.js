@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toast } from 'react-toastify';
 
 import { newRoom, clearErrors } from '../../redux/actions/roomActions'
-import { NEW_ROOM_RESET } from '../../redux/constants/roomConstants'
+import { NEW_TODO_RESET } from '../../redux/constants/roomConstants'
 
 const NewRoom = () => {
 
@@ -41,7 +41,7 @@ const NewRoom = () => {
 
         if (success) {
             router.push('/admin/rooms')
-            dispatch({ type: NEW_ROOM_RESET })
+            dispatch({ type: NEW_TODO_RESET })
         }
 
     }, [dispatch, error, success])
@@ -203,7 +203,7 @@ const NewRoom = () => {
                             />
                             <label className="form-check-label" htmlFor="internet_checkbox">
                                 Internet
-                     </label>
+                            </label>
                         </div>
                         <div className="form-check">
                             <input
@@ -215,7 +215,7 @@ const NewRoom = () => {
                             />
                             <label className="form-check-label" htmlFor="breakfast_checkbox">
                                 Breakfast
-                     </label>
+                            </label>
                         </div>
                         <div className="form-check">
                             <input
@@ -227,7 +227,7 @@ const NewRoom = () => {
                             />
                             <label className="form-check-label" htmlFor="airConditioned_checkbox">
                                 Air Conditioned
-                     </label>
+                            </label>
                         </div>
                         <div className="form-check">
                             <input
@@ -239,7 +239,7 @@ const NewRoom = () => {
                             />
                             <label className="form-check-label" htmlFor="petsAllowed_checkbox">
                                 Pets Allowed
-                     </label>
+                            </label>
                         </div>
                         <div className="form-check">
                             <input
@@ -251,7 +251,7 @@ const NewRoom = () => {
                             />
                             <label className="form-check-label" htmlFor="roomCleaning_checkbox">
                                 Room Cleaning
-                     </label>
+                            </label>
                         </div>
 
 
@@ -268,7 +268,7 @@ const NewRoom = () => {
                                 />
                                 <label className="custom-file-label" htmlFor="customFile">
                                     Choose Images
-                        </label>
+                                </label>
                             </div>
 
                             {imagesPreview.map(img => (

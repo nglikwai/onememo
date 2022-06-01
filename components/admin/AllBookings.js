@@ -10,8 +10,8 @@ import Loader from '../layout/Loader'
 import { useDispatch, useSelector } from 'react-redux'
 import { toast } from 'react-toastify';
 
-import { getAdminBookings, deleteBooking, clearErrors } from '../../redux/actions/bookingActions'
-import { DELETE_BOOKING_RESET } from '../../redux/constants/bookingConstants'
+import { getAdminBookings, deleteBooking, clearErrors } from '../../redux/actions/todoActions'
+import { DELETE_TODO_RESET } from '../../redux/constants/bookingConstants'
 
 const AllBookings = () => {
 
@@ -37,7 +37,7 @@ const AllBookings = () => {
 
         if (isDeleted) {
             router.push('/admin/bookings')
-            dispatch({ type: DELETE_BOOKING_RESET })
+            dispatch({ type: DELETE_TODO_RESET })
         }
 
 

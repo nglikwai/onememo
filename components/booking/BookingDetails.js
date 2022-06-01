@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { useDispatch, useSelector } from 'react-redux'
 import { toast } from 'react-toastify';
 
-import { clearErrors } from '../../redux/actions/bookingActions'
+import { clearErrors } from '../../redux/actions/todoActions'
 
 const BookingDetails = () => {
 

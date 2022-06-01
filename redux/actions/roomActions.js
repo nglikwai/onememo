@@ -15,9 +15,9 @@ import {
     ADMIN_ROOMS_REQUEST,
     ADMIN_ROOMS_SUCCESS,
     ADMIN_ROOMS_FAIL,
-    NEW_ROOM_REQUEST,
-    NEW_ROOM_SUCCESS,
-    NEW_ROOM_FAIL,
+    NEW_TODO_REQUEST,
+    NEW_TODO_SUCCESS,
+    NEW_TODO_FAIL,
     UPDATE_ROOM_REQUEST,
     UPDATE_ROOM_SUCCESS,
     UPDATE_ROOM_FAIL,
@@ -120,7 +120,7 @@ export const getAdminRooms = () => async (dispatch) => {
 export const newRoom = (roomData) => async (dispatch) => {
     try {
 
-        dispatch({ type: NEW_ROOM_REQUEST })
+        dispatch({ type: NEW_TODO_REQUEST })
 
         const config = {
             header: {
@@ -131,13 +131,13 @@ export const newRoom = (roomData) => async (dispatch) => {
         const { data } = await axios.post(`/api/rooms`, roomData, config)
 
         dispatch({
-            type: NEW_ROOM_SUCCESS,
+            type: NEW_TODO_SUCCESS,
             payload: data
         })
 
     } catch (error) {
         dispatch({
-            type: NEW_ROOM_FAIL,
+            type: NEW_TODO_FAIL,
             payload: error.response.data.message
         })
     }
@@ -203,7 +203,7 @@ export const newReview = (reviewData) => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.put(`/api/reviews`, reviewData, config)
+        const { data } = await axios.put(`/api/newTodo`, reviewData, config)
 
         dispatch({
             type: NEW_REVIEW_SUCCESS,

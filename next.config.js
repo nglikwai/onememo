@@ -1,4 +1,8 @@
 module.exports = {
+  experimental: {
+    // Enables the styled-components SWC transform
+    styledComponents: true
+  },
   env: {
     DB_URI:
       "mongodb+srv://nglikwai:dse00com@cluster0.evmdw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
@@ -20,5 +24,13 @@ module.exports = {
   images: {
     domains: ["cdn.flowtheroom.com"],
   },
+
 };
+
+const withOffline = require("next-offline");
+
+// your next.js configs
+const nextConfig = {};
+
+module.exports = withOffline(nextConfig);
 

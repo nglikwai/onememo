@@ -1,5 +1,5 @@
 import Room from '../models/room'
-import Booking from '../models/booking'
+import Todo from '../models/todo'
 
 import cloudinary from 'cloudinary'
 
@@ -8,29 +8,13 @@ import catchAsyncErrors from '../middlewares/catchAsyncErrors'
 import APIFeatures from '../utils/apiFeatures'
 
 // Create all rooms   =>   /api/rooms
-const allRooms = catchAsyncErrors(async (req, res) => {
+const getAllTodo = catchAsyncErrors(async (req, res) => {
 
-    const resPerPage = 12;
+    const todo = await Todo.find()
 
-    const roomsCount = await Room.countDocuments();
+    console.log(todo)
 
-    const apiFeatures = new APIFeatures(Room.find(), req.query)
-        .search()
-        .filter()
-
-    let rooms = await apiFeatures.query;
-    let filteredRoomsCount = rooms.length;
-
-    apiFeatures.pagination(resPerPage)
-    rooms = await apiFeatures.query;
-
-    res.status(200).json({
-        success: true,
-        roomsCount,
-        resPerPage,
-        filteredRoomsCount,
-        rooms
-    })
+    res.status(200).json({ success: true, todo })
 
 })
 
@@ -157,40 +141,11 @@ const deleteRoom = catchAsyncErrors(async (req, res) => {
 
 
 // Create a new review   =>   /api/reviews
-const createRoomReview = catchAsyncErrors(async (req, res) => {
+const newTodo = catchAsyncErrors(async (req, res) => {
 
-    const { rating, comment, roomId } = req.body;
-
-    const review = {
-        user: req.user._id,
-        name: req.user.name,
-        rating: Number(rating),
-        comment
-    }
-
-    const room = await Room.findById(roomId);
-
-    const isReviewed = room.reviews.find(
-        r => r.user.toString() === req.user._id.toString()
-    )
-
-    if (isReviewed) {
-
-        room.reviews.forEach(review => {
-            if (review.user.toString() === req.user._id.toString()) {
-                review.comment = comment;
-                review.rating = rating;
-            }
-        })
-
-    } else {
-        room.reviews.push(review);
-        room.numOfReviews = room.reviews.length
-    }
-
-    room.ratings = room.reviews.reduce((acc, item) => item.rating + acc, 0) / room.reviews.length
-
-    await room.save({ validateBeforeSave: false })
+    const todo = req.body;
+    console.log(todo)
+    const newTodo = await Todo.create(todo);
 
     res.status(200).json({
         success: true,
@@ -218,18 +173,6 @@ const checkReviewAvailability = catchAsyncErrors(async (req, res) => {
 })
 
 
-// Get all rooms - ADMIN   =>   /api/admin/rooms
-const allAdminRooms = catchAsyncErrors(async (req, res) => {
-
-    const rooms = await Room.find();
-
-    res.status(200).json({
-        success: true,
-        rooms
-    })
-
-})
-
 
 // Get all room reviews - ADMIN   =>   /api/reviews
 const getRoomReviews = catchAsyncErrors(async (req, res) => {
@@ -245,26 +188,22 @@ const getRoomReviews = catchAsyncErrors(async (req, res) => {
 
 
 // Delete room review - ADMIN   =>   /api/reviews
-const deleteReview = catchAsyncErrors(async (req, res) => {
+const deleteTodo = catchAsyncErrors(async (req, res) => {
 
-    const room = await Room.findById(req.query.roomId);
+    await Todo.findByIdAndDelete(req.query.id)
+    res.status(200).json({
+        success: true
+    })
 
-    const reviews = room.reviews.filter(review => review._id.toString() !== req.query.id.toString())
+})
 
-    const numOfReviews = reviews.length;
-
-    const ratings = room.reviews.reduce((acc, item) => item.rating + acc, 0) / reviews.length
-
-    await Room.findByIdAndUpdate(req.query.roomId, {
-        reviews,
-        ratings,
-        numOfReviews
-    }, {
+const updateTodo = catchAsyncErrors(async (req, res) => {
+    console.log(req.body)
+    await Todo.findByIdAndUpdate(req.query.id, req.body, {
         new: true,
         runValidators: true,
         useFindAndModify: false
     })
-
     res.status(200).json({
         success: true
     })
@@ -273,14 +212,14 @@ const deleteReview = catchAsyncErrors(async (req, res) => {
 
 
 export {
-    allRooms,
+    getAllTodo,
     newRoom,
     getSingleRoom,
     updateRoom,
     deleteRoom,
-    createRoomReview,
+    newTodo,
     checkReviewAvailability,
-    allAdminRooms,
     getRoomReviews,
-    deleteReview
+    deleteTodo,
+    updateTodo
 }

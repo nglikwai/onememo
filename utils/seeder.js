@@ -1,7 +1,8 @@
-const Room = require('../models/room');
+const Todo = require('../models/todo');
 const mongoose = require('mongoose');
 
-const rooms = require('../data/rooms')
+const TodoList = ['hi', 'buy milk', '6252', '12pm, ss, meet terrance gym', 'pw:3123456', 'ac: boc 9294 5929 5929 9592', 'code:0719', 'hi', 'buy milk', '6252', '12pm, ss, meet terrance gym', 'pw:3123456', 'ac: boc 9294 5929 5929 9592', 'code:0719', 'hi', 'buy milk', '6252', '12pm, ss, meet terrance gym', 'pw:3123456', 'ac: boc 9294 5929 5929 9592', 'code:0719']
+
 
 mongoose.connect('mongodb+srv://nglikwai:dse00com@cluster0.evmdw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
     useNewUrlParser: true,
@@ -10,14 +11,20 @@ mongoose.connect('mongodb+srv://nglikwai:dse00com@cluster0.evmdw.mongodb.net/myF
     useCreateIndex: true
 })
 
-const seedRooms = async () => {
+const seedTodos = async () => {
     try {
 
-        await Room.deleteMany();
-        console.log('Rooms are deleted');
+        await Todo.deleteMany();
+        console.log('Todo are deleted');
 
-        await Room.insertMany(rooms);
-        console.log('All Rooms are added.');
+        for (let todo of TodoList) {
+            await Todo.create({ 'todo': todo })
+        }
+
+
+
+
+        console.log('All Todo are added.');
 
         process.exit()
 
@@ -28,5 +35,5 @@ const seedRooms = async () => {
     }
 }
 
-seedRooms()
+seedTodos()
 

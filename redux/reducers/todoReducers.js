@@ -1,49 +1,97 @@
 import {
-    CHECK_BOOKING_REQUEST,
-    CHECK_BOOKING_SUCCESS,
-    CHECK_BOOKING_RESET,
-    CHECK_BOOKING_FAIL,
+    CHECK_TODO_REQUEST,
+    CHECK_TODO_SUCCESS,
+    CHECK_TODO_RESET,
+    CHECK_TODO_FAIL,
     BOOKED_DATES_SUCCESS,
     BOOKED_DATES_FAIL,
-    MY_BOOKINGS_SUCCESS,
-    MY_BOOKINGS_FAIL,
-    BOOKING_DETAILS_SUCCESS,
-    BOOKING_DETAILS_FAIL,
-    ADMIN_BOOKINGS_REQUEST,
-    ADMIN_BOOKINGS_SUCCESS,
-    ADMIN_BOOKINGS_FAIL,
-    DELETE_BOOKING_REQUEST,
-    DELETE_BOOKING_SUCCESS,
-    DELETE_BOOKING_RESET,
-    DELETE_BOOKING_FAIL,
+    MY_TODOS_SUCCESS,
+    MY_TODOS_FAIL,
+    TODO_DETAILS_SUCCESS,
+    TODO_DETAILS_FAIL,
+    ADMIN_TODOS_REQUEST,
+    ADMIN_TODOS_SUCCESS,
+    ADMIN_TODOS_FAIL,
+    DELETE_TODO_REQUEST,
+    DELETE_TODO_SUCCESS,
+    DELETE_TODO_RESET,
+    DELETE_TODO_FAIL,
 
-    CLEAR_ERRORS
+    CLEAR_ERRORS,
+
+    GET_TODOS_SUCCESS,
+
+    NEW_TODO_REQUEST,
+    NEW_TODO_SUCCESS,
+    NEW_TODO_FAIL,
 
 } from '../constants/bookingConstants'
 
+const TodoList = ['hi', 'buy milk', '6252', '12pm, ss, meet terrance gym', 'pw:3123456', 'ac: boc 9294 5929 5929 9592', 'code:0719', 'hi', 'buy milk', '6252', '12pm, ss, meet terrance gym', 'pw:3123456', 'ac: boc 9294 5929 5929 9592', 'code:0719', 'hi', 'buy milk', '6252', '12pm, ss, meet terrance gym', 'pw:3123456', 'ac: boc 9294 5929 5929 9592', 'code:0719']
 
-// Check Booking
-export const checkBookingReducer = (state = { available: null }, action) => {
+export const todoReducer = (state = { loading: false, todoList: [] }, action) => {
     switch (action.type) {
 
-        case CHECK_BOOKING_REQUEST:
+        case NEW_TODO_REQUEST:
+            return {
+                loading: true,
+                todoList: [...state.todoList]
+            }
+        case GET_TODOS_SUCCESS:
+            return {
+                loading: false,
+                todoList: [...action.payload]
+            }
+        case NEW_TODO_SUCCESS:
+            return {
+                loading: false,
+                todoList: [...state.todoList, action.payload]
+            }
+
+        case NEW_TODO_FAIL:
+            return {
+                loading: false,
+                error: action.payload
+            }
+        case DELETE_TODO_SUCCESS:
+            return {
+                loading: false,
+                todoList: state.todoList.filter(item => item._id != action.payload)
+            }
+
+        case CLEAR_ERRORS:
+            return {
+                ...state,
+                error: null
+            }
+
+        default:
+            return state
+    }
+}
+
+// Check Booking
+export const checktodoReducer = (state = { available: null }, action) => {
+    switch (action.type) {
+
+        case CHECK_TODO_REQUEST:
             return {
                 loading: true
             }
 
-        case CHECK_BOOKING_SUCCESS:
+        case CHECK_TODO_SUCCESS:
             return {
                 loading: false,
                 available: action.payload
             }
 
-        case CHECK_BOOKING_RESET:
+        case CHECK_TODO_RESET:
             return {
                 loading: false,
                 available: null
             }
 
-        case CHECK_BOOKING_FAIL:
+        case CHECK_TODO_FAIL:
             return {
                 loading: false,
                 error: action.payload
@@ -91,20 +139,20 @@ export const bookedDatesReducer = (state = { dates: [] }, action) => {
 export const bookingsReducer = (state = { bookings: [] }, action) => {
     switch (action.type) {
 
-        case ADMIN_BOOKINGS_REQUEST:
+        case ADMIN_TODOS_REQUEST:
             return {
                 loading: true,
             }
 
-        case MY_BOOKINGS_SUCCESS:
-        case ADMIN_BOOKINGS_SUCCESS:
+        case MY_TODOS_SUCCESS:
+        case ADMIN_TODOS_SUCCESS:
             return {
                 loading: false,
                 bookings: action.payload
             }
 
-        case MY_BOOKINGS_FAIL:
-        case ADMIN_BOOKINGS_FAIL:
+        case MY_TODOS_FAIL:
+        case ADMIN_TODOS_FAIL:
             return {
                 loading: false,
                 error: action.payload
@@ -123,13 +171,13 @@ export const bookingsReducer = (state = { bookings: [] }, action) => {
 
 export const bookingDetailsReducer = (state = { booking: {} }, action) => {
     switch (action.type) {
-        case BOOKING_DETAILS_SUCCESS:
+        case TODO_DETAILS_SUCCESS:
             return {
                 loading: false,
                 booking: action.payload
             }
 
-        case BOOKING_DETAILS_FAIL:
+        case TODO_DETAILS_FAIL:
             return {
                 loading: false,
                 error: action.payload
@@ -147,39 +195,3 @@ export const bookingDetailsReducer = (state = { booking: {} }, action) => {
 }
 
 
-export const bookingReducer = (state = {}, action) => {
-    switch (action.type) {
-
-        case DELETE_BOOKING_REQUEST:
-            return {
-                loading: true
-            }
-
-        case DELETE_BOOKING_SUCCESS:
-            return {
-                loading: false,
-                isDeleted: action.payload
-            }
-
-        case DELETE_BOOKING_RESET:
-            return {
-                loading: false,
-                isDeleted: false
-            }
-
-        case DELETE_BOOKING_FAIL:
-            return {
-                loading: false,
-                error: action.payload
-            }
-
-        case CLEAR_ERRORS:
-            return {
-                ...state,
-                error: null
-            }
-
-        default:
-            return state
-    }
-}

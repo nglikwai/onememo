@@ -1,7 +1,7 @@
 import nc from 'next-connect'
 import dbConnect from '../../../config/dbConnect'
 
-import { createRoomReview, getRoomReviews, deleteReview } from '../../../controllers/roomControllers'
+import { checkReviewAvailability } from '../../../controllers/todoControllers'
 
 import onError from '../../../middlewares/errors'
 import { isAuthenticatedUser } from '../../../middlewares/auth'
@@ -12,16 +12,6 @@ dbConnect();
 
 handler
     .use(isAuthenticatedUser)
-    .put(createRoomReview)
-
-
-handler
-    .use(isAuthenticatedUser)
-    .get(getRoomReviews)
-
-
-handler
-    .use(isAuthenticatedUser)
-    .delete(deleteReview)
+    .get(checkReviewAvailability)
 
 export default handler;

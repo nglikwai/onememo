@@ -1,11 +1,17 @@
 import Home from '../components/Home'
 import Layout from '../components/layout/Layout'
-
-import { getRooms } from '../redux/actions/roomActions'
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getAllTodos } from '../redux/actions/todoActions'
 
 import { wrapper } from '../redux/store'
 
 export default function Index() {
+
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(getAllTodos())
+  }, [])
   return (
     <Layout>
       <Home />
@@ -13,6 +19,3 @@ export default function Index() {
   )
 }
 
-export const getServerSideProps = wrapper.getServerSideProps(async ({ req, query, store }) => {
-  await store.dispatch(getRooms(req, query.page, query.location, query.guests, query.category))
-})

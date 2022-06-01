@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 import { loadUser } from "../../redux/actions/userActions";
+import { getAllTodos } from "../../redux/actions/todoActions";
+
 import { signOut } from "next-auth/client";
 import { useTranslation } from 'react-i18next'
 
@@ -25,31 +27,13 @@ const Header = () => {
   };
 
   return (
-    <nav className="navbar row justify-content-center sticky-top">
-      <div className="container">
-        <div className="col-3 p-0">
-          <div className="navbar-brand">
-            <Link href="/" >
-              <h4>
-                <strong className="text-danger" style={{cursor:'pointer'}}>ONE BOOK</strong>
-              </h4>
-            </Link>
-          </div>
-        </div>
-        <Link href="/search">
-                <SearchButton>
-                  <FontAwesomeIcon
-                    icon={faMagnifyingGlass}
-                    color="white"
-                    size="lg"
-                  />
-                </SearchButton>
-              </Link>
-        <div className="col-3 mt-3 mt-md-0 text-center">
+    <NavWrapper className="navbar row justify-content-center sticky-top">
+      <Wrapper>
+        <div >
           {user ? (
-            <div className="ml-4 dropdown d-line">
+            <div className="dropdown">
               <a
-                className="btn dropdown-toggle mr-4"
+                className="btn dropdown-toggle "
                 id="dropDownMenuButton"
                 data-toggle="dropdown"
                 aria-haspopup="true"
@@ -61,62 +45,36 @@ const Header = () => {
                     alt={user && user.name}
                     className="rounded-circle"
                   />
-                  
-                </figure>
-    
-                <span>{user && user.name}</span>
-              </a>
-  
 
-              <div
-                className="dropdown-menu"
+                </figure>
+              </a>
+
+
+              <DropMenu
+                className="dropdown-menu "
                 aria-labelledby="dropDownMenuButton"
               >
-                {user.role === "admin" && (
-                  <>
-                    <Link href="/admin/rooms">
-                      <a className="dropdown-item">{t('header.manage_room')}</a>
-                    </Link>
 
-                    <Link href="/admin/bookings">
-                      <a className="dropdown-item">{t('header.manage_booking')}</a>
-                    </Link>
-
-                    <Link href="/admin/users">
-                      <a className="dropdown-item">{t('header.manage_users')}</a>
-                    </Link>
-
-                    <Link href="/admin/reviews">
-                      <a className="dropdown-item">{t('header.manage_review')}</a>
-                    </Link>
-
-                    <hr />
-                  </>
-                )}
-
-                <Link href="/bookings/me">
-                  <a className="dropdown-item">{t('header.booking')}</a>
-                </Link>
 
                 <Link href="/me/update">
-                  <a className="dropdown-item">{t('header.profile')}</a>
+                  <Item className="dropdown-item ">{t('header.profile')}</Item>
                 </Link>
 
                 <Link href="/">
-                  <a
+                  <Item
                     className="dropdown-item text-danger"
                     onClick={logoutHandler}
                   >
                     {t('header.logout')}
-                  </a>
+                  </Item>
                 </Link>
-              </div>
+              </DropMenu>
             </div>
           ) : (
             !loading && (
-              <Link href="/login">
-                <a className="px-4 py-2 text-secondary bg float-right border rounded-pill">
-                <FontAwesomeIcon
+              <Link href="/">
+                <a className="rounded-pill">
+                  <FontAwesomeIcon
                     icon={faUser}
                     color="#aaa"
                     size="lg"
@@ -126,13 +84,49 @@ const Header = () => {
             )
           )}
         </div>
-      </div>
-    </nav>
+
+        <Link href="/search">
+          <SearchButton>
+            <FontAwesomeIcon
+              icon={faMagnifyingGlass}
+              color="white"
+              size="lg"
+            />
+          </SearchButton>
+        </Link>
+
+      </Wrapper>
+    </NavWrapper >
   );
 };
+const NavWrapper = styled.div`
+  background-color: rgba(50,50,50,0.7);
+`
+const Name = styled.span`
+  font-size: 20px;
+  color: #999;
+`
 
+const DropMenu = styled.div`
+  border-radius: 1rem;
+`
+
+const Item = styled.div`
+  border-radius: 1rem;
+  font-size: 20px;
+  line-height: 200%; 
+`
+
+const Wrapper = styled.div`
+  width:100%;
+  padding:0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+`
 const SearchButton = styled.button`
-  background-color: #cc0000;
+  background-color: rgb(131, 205, 134);
   border-radius: 3rem;
   border: none;
   padding: 8px 12px;

@@ -4,7 +4,7 @@ import { getSession } from 'next-auth/client'
 import MyBookings from '../../components/booking/MyBookings'
 import Layout from '../../components/layout/Layout'
 
-import { myBookings } from '../../redux/actions/bookingActions'
+import { myBookings } from '../../redux/actions/todoActions'
 import { wrapper } from '../../redux/store'
 
 const MyBookingsPage = () => {

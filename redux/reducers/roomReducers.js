@@ -13,10 +13,10 @@ import {
     ADMIN_ROOMS_REQUEST,
     ADMIN_ROOMS_SUCCESS,
     ADMIN_ROOMS_FAIL,
-    NEW_ROOM_REQUEST,
-    NEW_ROOM_SUCCESS,
-    NEW_ROOM_RESET,
-    NEW_ROOM_FAIL,
+    NEW_TODO_REQUEST,
+    NEW_TODO_SUCCESS,
+    NEW_TODO_RESET,
+    NEW_TODO_FAIL,
     UPDATE_ROOM_REQUEST,
     UPDATE_ROOM_SUCCESS,
     UPDATE_ROOM_RESET,
@@ -105,24 +105,24 @@ export const roomDetailsReducer = (state = { room: {} }, action) => {
 
 export const newRoomReducer = (state = { room: {} }, action) => {
     switch (action.type) {
-        case NEW_ROOM_REQUEST:
+        case NEW_TODO_REQUEST:
             return {
                 loading: true
             }
 
-        case NEW_ROOM_SUCCESS:
+        case NEW_TODO_SUCCESS:
             return {
                 loading: false,
                 success: action.payload.success,
                 room: action.payload.room
             }
 
-        case NEW_ROOM_RESET:
+        case NEW_TODO_RESET:
             return {
                 success: false
             }
 
-        case NEW_ROOM_FAIL:
+        case NEW_TODO_FAIL:
             return {
                 loading: false,
                 error: action.payload
