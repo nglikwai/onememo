@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "seeder": "node utils/seeder",
-    "server": "yarn build && NODE_ENV=production node server.js"
+    "seeder": "node utils/seeder"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",

@@ -16,7 +16,6 @@ handler
 
 
 handler
-    .use(isAuthenticatedUser)
     .get(getAllTodo)
 
 handler
