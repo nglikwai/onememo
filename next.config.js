@@ -32,5 +32,4 @@ module.exports = {
 // your next.js configs
 const nextConfig = {};
 
-module.exports = withOffline(nextConfig);
 
