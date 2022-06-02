@@ -27,7 +27,7 @@ module.exports = {
 
 };
 
-const withOffline = require("next-offline");
+
 
 // your next.js configs
 const nextConfig = {};
