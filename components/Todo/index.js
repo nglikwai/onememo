@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { deleteTodo, updateTodo } from "../../redux/actions/todoActions";
 import { useDispatch, useSelector } from "react-redux";
 
-const Todo = ({ item }) => {
+const Todo = ({ item, screen }) => {
   const dispatch = useDispatch();
   const [edit, setEdit] = useState(false);
   const [color, setColor] = useState("rgb(131, 205, 134)");
@@ -38,7 +38,7 @@ const Todo = ({ item }) => {
 
         {edit && (
           <>
-            <EditWrapper height={offsetTop}>
+            <EditWrapper height={`${offsetTop}px`}>
               <EditItem
                 color="green"
                 onClick={() => updateHandler("completed")}
@@ -68,19 +68,18 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  transition: 0.3;
 `;
 const zoom = keyframes`
   from {transform: scale(0.5, 0.5);}
-  to {background-color: rgba(256,256,256,0.8); transform: scale(1, 1);}
+  to { transform: scale(1, 1);}
 
 `;
 
 const EditWrapper = styled.div`
     padding:12px;
     display: flex;
-    position: absolute;
     top: ${(props) => props.height};
-    background-color: rgba(256,256,256,0.5);
     animation: ${zoom} 0.3s forwards;
     border-radius:1.5rem;
 `;

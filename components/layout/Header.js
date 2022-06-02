@@ -85,7 +85,7 @@ const Header = () => {
           )}
         </div>
 
-        <Link href="/search">
+        <Link href="/">
           <SearchButton>
             <FontAwesomeIcon
               icon={faMagnifyingGlass}
@@ -100,7 +100,9 @@ const Header = () => {
   );
 };
 const NavWrapper = styled.div`
-  background-color: rgba(50,50,50,0.7);
+&:hover{background-color: rgba(50,50,50,0.9);}
+  background-color: rgba(50,50,50,0.3);
+  transition: 0.4s;
 `
 const Name = styled.span`
   font-size: 20px;

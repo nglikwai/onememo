@@ -13,6 +13,7 @@ const Layout = ({ children, title = 'Book Best Hotels for your Holiday' }) => {
 
     return (
         <Wrapper>
+            <BackgroundImage />
             <Head>
                 <title>{title}</title>
                 <meta charSet="utf-8" />
@@ -30,6 +31,15 @@ const Layout = ({ children, title = 'Book Best Hotels for your Holiday' }) => {
 }
 
 const Wrapper = styled.div`
-    background-image: url('http://localhost:3000/images/background.png');
+`
+
+const BackgroundImage = styled.div`
+    background-image: url('images/background.png');
+    width:100%;
+    height: 100%;
+    position:fixed;
+    z-index: -10;
+    background-size: cover;
+    
 `
 export default Layout

@@ -10,7 +10,7 @@ import APIFeatures from '../utils/apiFeatures'
 // Create all rooms   =>   /api/rooms
 const getAllTodo = catchAsyncErrors(async (req, res) => {
 
-    const todo = await Todo.find()
+    const todo = await Todo.find({ user: req.user._id })
 
     console.log(todo)
 
@@ -144,8 +144,9 @@ const deleteRoom = catchAsyncErrors(async (req, res) => {
 const newTodo = catchAsyncErrors(async (req, res) => {
 
     const todo = req.body;
-    console.log(todo)
-    const newTodo = await Todo.create(todo);
+
+    const data = { ...todo, "user": req.user._id }
+    const newTodo = await Todo.create(data);
 
     res.status(200).json({
         success: true,
