@@ -22,8 +22,9 @@ const Writing = () => {
 
 const Textarea = styled.textarea`
     width:82%;
+    height: 50px;
     border-radius: 3rem;
-    padding:8px 12px;
+    padding:4px 12px;
 `
 
 const SubmitButton = styled.button`

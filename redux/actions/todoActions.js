@@ -85,7 +85,7 @@ export const getAllTodos = () => async (dispatch) => {
     try {
 
 
-        let link = `http://localhost:3000/api/todo`
+        let link = `https://onememo-kdnp4ejst-nglikwai.vercel.app/`
 
 
         const { data } = await axios.get(link)
