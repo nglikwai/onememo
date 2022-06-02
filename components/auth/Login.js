@@ -43,24 +43,24 @@ const Login = () => {
                     <Wrapper className="shadow-lg" onSubmit={submitHandler}>
                         <Title className="mb-3">ONE MEMO</Title>
                         <div className="form-group">
-                            <Label htmlFor="name_field">{t('login.name')}</Label>
                             <Input
                                 type="text"
                                 id="name_field"
                                 className="form-control"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
+                                placeholder={`${t('login.name')}`}
                             />
                         </div>
 
                         <div className="form-group">
-                            <Label htmlFor="password_field">{t('login.password')}</Label>
                             <Input
                                 type="password"
                                 id="password_field"
                                 className="form-control"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
+                                placeholder={`${t('login.password')}`}
                             />
                         </div>
 
@@ -73,7 +73,7 @@ const Login = () => {
                             {loading ? <ButtonLoader /> : `${t('login.login')}`}
                         </LoginButton>
 
-                        <Link href="/register" className="float-right mt-3">{t('login.new_user')}</Link>
+                        <Link href="/register" className="float-right mt-5"><Word>{t('login.new_user')}</Word></Link>
                     </Wrapper>
                 </div>
             </div>
@@ -85,17 +85,10 @@ export default Login
 
 const Title = styled.h1`
     color: rgb(131, 205, 134) ;
-    font-size: 80px;
-    font-weight: 900;
-    padding: 0  0 20px 0;
-    
+    font-size: 60px;
+    font-weight: 900;    
 `
 
-const Label = styled.label`
-    color: white ;
-    font-size: 20px;
-    font-weight: 300;
-`
 
 const Wrapper = styled.form`
     background-color: rgba(256,256,256,0.2);
@@ -105,10 +98,16 @@ const Wrapper = styled.form`
 const Input = styled.input`
 border-radius: 1rem;
 height: 50px;
-margin: 10px 0;
+margin: 30px 0;
 `
 
 
 const LoginButton = styled.button`
-border-radius: 3rem;
+    border-radius: 3rem;
+    margin:0;
+`
+
+const Word = styled.span`
+    color: #ccc;
+    font-weight: 300;
 `

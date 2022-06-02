@@ -24,7 +24,9 @@ const Textarea = styled.textarea`
     width:82%;
     height: 50px;
     border-radius: 3rem;
-    padding:4px 12px;
+    padding:8px 12px;
+    font-size: 20px;
+    line-height: 110%;
 `
 
 const SubmitButton = styled.button`
@@ -32,9 +34,10 @@ const SubmitButton = styled.button`
     background-color: rgb(107, 176, 205);
     border: none;
     border-radius: 50%;
-    width:50px;
-    height:50px;
-    font-size: 40px;
+    width:40px;
+    height:40px;
+    font-size: 3
+    0px;
     margin: 0 2% 0 0;
     font-weight: 900;
     display:flex;

@@ -100,8 +100,8 @@ const Header = () => {
   );
 };
 const NavWrapper = styled.div`
-&:hover{background-color: rgba(50,50,50,0.9);}
-  background-color: rgba(50,50,50,0.3);
+&:hover{background-color: rgba(0,0,0,0.8);}
+  background-color: rgba(0,0,0,0.3);
   transition: 0.4s;
 `
 const Name = styled.span`

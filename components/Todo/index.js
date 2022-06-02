@@ -55,7 +55,7 @@ const Todo = ({ item, screen }) => {
                 color="orange"
                 onClick={() => updateHandler("important")}
               >
-                X
+                C
               </EditItem>
             </EditWrapper>
           </>
@@ -99,8 +99,8 @@ const TodoWrapper = styled.div`
   background-color: ${(props) => (props.color ? props.color : "green")};
   padding: 4px 20px;
   color: white;
-  font-size: 20px;
-  margin: 8px 16px;
+  font-size: 18px;
+  margin: 6px 16px;
   width: auto;
 `;
 

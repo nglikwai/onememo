@@ -1,26 +1,27 @@
 {
-    "short_name": "One Memo",
-    "name": "One Memo for your life",
-    "icons": [
-      {
-        "src": "./favicon.ico",
-        "sizes": "64x64 32x32 24x24 16x16",
-        "type": "image/x-icon"
-      },
-      {
-        "src": "./images/default_avatar.jpg",
-        "type": "image/png",
-        "sizes": "192x192"
-      },
-      {
-        "src": "./images/default_avatar.jpg",
-        "type": "image/png",
-        "sizes": "512x512"
-      }
-    ],
-    "start_url": ".",
-    "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#ffffff"
-  }
-  
+  "name": "One Memo",
+  "short_name": "One Memo",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logo.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#101f38",
+  "background_color": "#101f38",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
