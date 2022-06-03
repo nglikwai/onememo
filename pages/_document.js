@@ -33,32 +33,32 @@ class MyDocument extends Document {
                     <meta name='msapplication-tap-highlight' content='no' />
                     <meta name='theme-color' content='#000000' />
 
-                    <link rel='apple-touch-icon' href='/icons/touch-icon-iphone.png' />
-                    <link rel='apple-touch-icon' sizes='152x152' href='images/logo.png' />
-                    <link rel='apple-touch-icon' sizes='180x180' href='images/logo.png' />
-                    <link rel='apple-touch-icon' sizes='167x167' href='images/logo.png' />
+                    <link rel='apple-touch-icon' href='images/icon.png' />
+                    <link rel='apple-touch-icon' sizes='152x152' href='images/icon.png' />
+                    <link rel='apple-touch-icon' sizes='180x180' href='images/icon.png' />
+                    <link rel='apple-touch-icon' sizes='167x167' href='images/icon.png' />
 
-                    <link rel='icon' type='image/png' sizes='32x32' href='/icons/favicon-32x32.png' />
-                    <link rel='icon' type='image/png' sizes='16x16' href='/icons/favicon-16x16.png' />
+                    <link rel='icon' type='image/png' sizes='32x32' href='images/icon.png' />
+                    <link rel='icon' type='image/png' sizes='16x16' href='images/icon.png' />
                     <link rel='manifest' href='/manifest.json' />
                     <link rel='mask-icon' href='/icons/safari-pinned-tab.svg' color='#5bbad5' />
-                    <link rel='shortcut icon' href='/favicon.ico' />
+                    <link rel='shortcut icon' href='images/icon.png' />
                     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' />
 
                     <meta name='twitter:card' content='summary' />
                     <meta name='twitter:url' content='https://onememo.vercel.app' />
-                    <meta name='twitter:title' content='PWA App' />
-                    <meta name='twitter:description' content='Best PWA App in the world' />
+                    <meta name='twitter:title' content='OneMemo App' />
+                    <meta name='twitter:description' content='Best Memo App in the world' />
                     <meta name='twitter:image' content='https://onememo.vercel.app' />
-                    <meta name='twitter:creator' content='@DavidWShadow' />
+                    <meta name='twitter:creator' content='@Likwai' />
                     <meta property='og:type' content='website' />
-                    <meta property='og:title' content='Memo App' />
+                    <meta property='og:title' content='One Memo' />
                     <meta property='og:description' content='Best Memo App in the world' />
-                    <meta property='og:site_name' content='PWA App' />
+                    <meta property='og:site_name' content='Memo App' />
                     <meta property='og:url' content='https://onememo.vercel.app' />
-                    <meta property='og:image' content='https://onememo.vercel.app/images/logo.png' />
+                    <meta property='og:image' content='https://onememo.vercel.app/images/icon.png' />
                 </Head>
-                <body>
+                <body style={{ backgroundColor: '#060B18' }}>
                     <Main />
                     <NextScript />
 

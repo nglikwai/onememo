@@ -7,7 +7,7 @@ import styled from "styled-components";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Layout = ({ children, title = 'Book Best Hotels for your Holiday' }) => {
+const Layout = ({ children, title = 'One Memo' }) => {
 
 
 
@@ -33,7 +33,7 @@ const Wrapper = styled.div`
 `
 
 const BackgroundImage = styled.div`
-    background-image: url('images/background.png');
+    background-image: url('images/background.svg');
     width:100%;
     height: 100%;
     position:fixed;

@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 import { loadUser } from "../../redux/actions/userActions";
-import { getAllTodos } from "../../redux/actions/todoActions";
 
 import { signOut } from "next-auth/client";
 import { useTranslation } from 'react-i18next'
+import SearchButton from "../SearchButton";
 
 const Header = () => {
   const { t } = useTranslation()
@@ -31,7 +31,7 @@ const Header = () => {
       <Wrapper>
         <div >
           {user ? (
-            <div className="dropdown">
+            <div className="dropdown" style={{ opacity: '0.9' }} >
               <a
                 className="btn dropdown-toggle "
                 id="dropDownMenuButton"
@@ -85,15 +85,10 @@ const Header = () => {
           )}
         </div>
 
-        <Link href="/">
-          <SearchButton>
-            <FontAwesomeIcon
-              icon={faMagnifyingGlass}
-              color="white"
-              size="lg"
-            />
-          </SearchButton>
-        </Link>
+
+        <SearchButton />
+
+
 
       </Wrapper>
     </NavWrapper >
@@ -111,12 +106,17 @@ const Name = styled.span`
 
 const DropMenu = styled.div`
   border-radius: 1rem;
+  background-color: #222;
 `
 
 const Item = styled.div`
+&:active{background-color:#666 ; color:white}
+&:hover{background-color:#444;color:white}
+  cursor: pointer;
   border-radius: 1rem;
   font-size: 20px;
   line-height: 200%; 
+  color: white;
 `
 
 const Wrapper = styled.div`
@@ -127,11 +127,5 @@ const Wrapper = styled.div`
   justify-content: space-between;
 
 `
-const SearchButton = styled.button`
-  background-color: rgb(131, 205, 134);
-  border-radius: 3rem;
-  border: none;
-  padding: 8px 12px;
-`;
 
 export default Header;

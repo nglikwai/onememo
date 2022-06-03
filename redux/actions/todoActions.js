@@ -58,34 +58,30 @@ export const createTodo = (todo) => async (dispatch) => {
 }
 
 
-
-export const deleteBooking = (id) => async (dispatch) => {
+export const getTodo = (text) => async (dispatch) => {
     try {
 
-        dispatch({ type: DELETE_TODO_REQUEST })
+        // let link = `https://onememo.vercel.app/api/todo`
+        let link = `http://localhost:3000/api/todo?text=1`
 
-        const { data } = await axios.delete(`/api/admin/bookings/${id}`)
+
+        const { data } = await axios.get(link)
 
         dispatch({
-            type: DELETE_TODO_SUCCESS,
-            payload: data.success
+            type: GET_TODOS_SUCCESS,
+            payload: data.todo
         })
 
     } catch (error) {
-
-        dispatch({
-            type: DELETE_TODO_FAIL,
-            payload: error.response.data.message
-        })
+        console.log(error)
     }
 }
 
-
-export const getAllTodos = () => async (dispatch) => {
+export const getAllTodos = (text) => async (dispatch) => {
     try {
 
-
-        let link = `https://onememo.vercel.app/api/todo`
+        // let link = `https://onememo.vercel.app/api/todo`
+        let link = `http://localhost:3000/api/todo?text=${text}`
 
 
         const { data } = await axios.get(link)

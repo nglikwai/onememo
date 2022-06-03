@@ -41,3 +41,32 @@ module.exports = withPWA({
 const nextConfig = {};
 
 
+const path = require('path');
+const webpack = require('webpack');
+
+const config = {
+  devtools: 'eval-source-map',
+  entry: path.join(__dirname, '/client/index.js'),
+  output: {
+    path: '/'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.jsx$/,
+        include: path.join(__dirname, 'client'),
+        loader: 'babel-loader',
+        options: {
+          presets: [['es2015', { modules: false }], 'react'],
+        },
+      }
+    ]
+  },
+  resolve: {
+    extensions: ['', '.js']
+  }
+}
+
+module.exports = config;
+
+

@@ -15,23 +15,25 @@ const Writing = () => {
     return (
         <Wrapper>
             <Textarea onChange={(e) => setText(e.target.value)} value={text}></Textarea>
-            <SubmitButton onClick={submitHandler}>+</SubmitButton>
+            <SubmitButton onClick={submitHandler}>{'>'}</SubmitButton>
         </Wrapper>
     )
 }
 
 const Textarea = styled.textarea`
-    width:82%;
+    width:80%;
     height: 50px;
     border-radius: 3rem;
     padding:8px 12px;
     font-size: 20px;
     line-height: 110%;
+    background-color: #444;
+    color:white;
 `
 
 const SubmitButton = styled.button`
     color:white;
-    background-color: rgb(107, 176, 205);
+    background-color: rgb(46, 80, 124);
     border: none;
     border-radius: 50%;
     width:40px;
@@ -46,9 +48,8 @@ const SubmitButton = styled.button`
 `
 
 const Wrapper = styled.div`
-    border-radius: 2rem;
-    position: sticky;
-    bottom:10px;
+    position: fixed;
+    bottom:0px;
     padding:12px 20px;
     opacity: 0.9;
     color: white;
@@ -57,6 +58,7 @@ const Wrapper = styled.div`
     justify-content: space-between;
     width:100%;
     align-items: center;
+    background-color: #111;
 `
 
 export default Writing

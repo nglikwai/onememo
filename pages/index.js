@@ -8,10 +8,7 @@ import { wrapper } from '../redux/store'
 
 export default function Index() {
 
-  const dispatch = useDispatch()
-  useEffect(() => {
-    dispatch(getAllTodos())
-  }, [])
+
   return (
     <Layout>
       <Home />

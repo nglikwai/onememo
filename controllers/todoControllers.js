@@ -10,9 +10,8 @@ import APIFeatures from '../utils/apiFeatures'
 // Create all rooms   =>   /api/rooms
 const getAllTodo = catchAsyncErrors(async (req, res) => {
 
-    const todo = await Todo.find({ user: req.user._id })
+    const todo = await Todo.find({ user: req.user._id, todo: { $regex: req.query.text } })
 
-    console.log(todo)
 
     res.status(200).json({ success: true, todo })
 

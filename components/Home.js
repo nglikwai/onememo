@@ -1,15 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
-import { useTranslation } from 'react-i18next'
-import Pagination from "react-js-pagination";
+
 
 import Todo from "./Todo";
 
-import { useDispatch, useSelector } from "react-redux";
-import { toast } from "react-toastify";
+import { useSelector } from "react-redux";
 
-import { clearErrors } from "../redux/actions/roomActions";
 
 import styled from "styled-components";
 import Writing from "./Writing";
@@ -48,6 +44,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
   height:100%;
+  padding-bottom:80px;
 `
 
 
