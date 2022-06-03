@@ -58,7 +58,7 @@ const Wrapper = styled.div`
     justify-content: space-between;
     width:100%;
     align-items: center;
-    background-color: #111;
+    background-color: #000;
 `
 
 export default Writing

@@ -98,6 +98,8 @@ const NavWrapper = styled.div`
 &:hover{background-color: rgba(0,0,0,0.8);}
   background-color: rgba(0,0,0,0.3);
   transition: 0.4s;
+  position: fixed;
+  width:100%;
 `
 const Name = styled.span`
   font-size: 20px;

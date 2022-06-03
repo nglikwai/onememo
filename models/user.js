@@ -39,6 +39,10 @@ const userSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
+    preference: {
+        type: String,
+        default: 'black'
+    },
     resetPasswordToken: String,
     resetPasswordExpire: Date
 })

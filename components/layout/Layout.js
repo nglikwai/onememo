@@ -6,14 +6,16 @@ import styled from "styled-components";
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useSelector } from 'react-redux';
 
 const Layout = ({ children, title = 'One Memo' }) => {
 
+    const { user } = useSelector(state => state.loadedUser)
 
 
     return (
-        <Wrapper>
-            <BackgroundImage />
+        <Wrapper >
+            <BackgroundImage color={user?.preference} />
             <Head>
                 <title>{title}</title>
                 <meta charSet="utf-8" />
@@ -33,7 +35,7 @@ const Wrapper = styled.div`
 `
 
 const BackgroundImage = styled.div`
-    background-image: url('images/background.svg');
+    background-image: url(images/background-${props => props.color}.svg);
     width:100%;
     height: 100%;
     position:fixed;
