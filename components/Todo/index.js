@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled, { keyframes } from "styled-components";
-import { deleteTodo, updateTodo } from "../../redux/actions/todoActions";
+import { deleteTodo, getAllTodos, updateTodo } from "../../redux/actions/todoActions";
 import { useDispatch, useSelector } from "react-redux";
 import { faCheckCircle, faFlag, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -47,8 +47,12 @@ const Todo = ({ item, screen }) => {
     }
     dispatch(updateTodo(item._id, status));
   };
+
+  const WrapperOnClick = () => {
+    setEdit(!edit)
+  }
   return (
-    <Wrapper onClick={() => setEdit(!edit)} ref={ref}>
+    <Wrapper onClick={WrapperOnClick} ref={ref}>
       <TodoWrapper color={color}>
 
 

@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <Wrapper>
-      <BackgroundImage color={user?.preference} />
+      <BackgroundImage color={user ? user.preference : 'blue'} />
 
       <TodoWrapper>
 

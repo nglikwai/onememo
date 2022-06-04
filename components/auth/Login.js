@@ -38,6 +38,8 @@ const Login = () => {
 
     return (
         <div className="container container-fluid">
+            <BackgroundImage color='black' />
+
             <div className="row wrapper">
                 <div className="col-10">
                     <Wrapper className="shadow-lg" onSubmit={submitHandler}>
@@ -73,7 +75,7 @@ const Login = () => {
                             {loading ? <ButtonLoader /> : `${t('login.login')}`}
                         </LoginButton>
 
-                        <Link href="/register" className="float-right mt-5"><Word>{t('login.new_user')}</Word></Link>
+                        <Link href="/register" className="float-right mt-5"><LoginButton className="btn btn-block py-3 ">{t('login.new_user')}</LoginButton></Link>
                     </Wrapper>
                 </div>
             </div>
@@ -110,4 +112,17 @@ const LoginButton = styled.button`
 const Word = styled.span`
     color: #ccc;
     font-weight: 300;
+`
+
+
+const BackgroundImage = styled.div`
+    background-image: url(/images/background-${props => props.color}.svg);
+    width:100%;
+    height: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: -10;
+    background-size: cover;
+    
 `

@@ -5,9 +5,9 @@ import { getSession } from 'next-auth/client'
 
 export default function LoginPage() {
     return (
-        <Layout title='Login' >
-            <Login />
-        </Layout>
+
+        <Login />
+
     )
 }
 
