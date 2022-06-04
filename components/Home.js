@@ -26,7 +26,7 @@ const Home = () => {
       router.push('/login')
     }
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [todoList, user]);
+  }, [user]);
 
   return (
     <Wrapper>
@@ -46,9 +46,9 @@ const Home = () => {
             loading
           </>
         }
-      </TodoWrapper>
-      <Writing />
-      <span ref={bottomRef}></span>
+      </TodoWrapper >
+      <Writing bottomRef={bottomRef} />
+      <div ref={bottomRef}></div>
     </Wrapper>
 
   )

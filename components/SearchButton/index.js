@@ -20,19 +20,20 @@ const SearchButton = () => {
     }, [text])
 
     return (
-        <Button placeholder="🔎" value={text} onChange={onChangeHandler} />
+        <Button placeholder="🔎" value={text} onChange={onChangeHandler} text={text.length > 1 ? true : false} />
     )
 }
 
 export default SearchButton
 
 const Button = styled.input`
-&:focus{width:200px; background-color:#444; color:white; font-weight:400}
+&:focus{width:100%; background-color:#444; color:white; font-weight:400}
   background-color: transparent;
   border-radius: 3rem;
   border: none;
   padding: 8px;
-  width:40px;
+  width:${props => props.text == true ? '100%' : '40px'};
   font-weight: 900;
   transition: 0.3s;
+  color:white;
 `;

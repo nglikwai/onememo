@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import styled from "styled-components";
 import { createTodo } from '../../redux/actions/todoActions';
@@ -6,22 +6,26 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-const Writing = () => {
+const Writing = ({ bottomRef }) => {
     const dispatch = useDispatch()
     const [text, setText] = useState('')
 
+
     const submitHandler = () => {
+        console.log(bottomRef)
+        bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
         dispatch(createTodo(text))
         setText('')
     }
     return (
         <Wrapper>
             <Textarea onChange={(e) => setText(e.target.value)} value={text}></Textarea>
-            <SubmitButton onClick={submitHandler}>                  <FontAwesomeIcon
-                icon={faPaperPlane}
-                color="white"
-                size="xs"
-            /></SubmitButton>
+            <SubmitButton onClick={submitHandler}>
+                <FontAwesomeIcon
+                    icon={faPaperPlane}
+                    color="white"
+                    size="xs"
+                /></SubmitButton>
         </Wrapper>
     )
 }
@@ -49,9 +53,8 @@ const SubmitButton = styled.button`
     font-size: 26px;
     font-weight: 900;
     display:flex;
-    justify-content:center;
     align-items: center;
-    padding-left:10px
+    margin-left:10px
 `
 
 const Wrapper = styled.div`
