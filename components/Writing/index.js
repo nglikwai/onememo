@@ -29,7 +29,7 @@ const Writing = () => {
 const Textarea = styled.textarea`
 &:focus{    background-color: #333;
 }
-    width:85%;
+    width:80%;
     height: 50px;
     border-radius: 3rem;
     padding:8px 12px;
@@ -51,6 +51,7 @@ const SubmitButton = styled.button`
     display:flex;
     justify-content:center;
     align-items: center;
+    padding-left:10px
 `
 
 const Wrapper = styled.div`
