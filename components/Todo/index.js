@@ -2,6 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 import styled, { keyframes } from "styled-components";
 import { deleteTodo, updateTodo } from "../../redux/actions/todoActions";
 import { useDispatch, useSelector } from "react-redux";
+import { faCheckCircle, faFlag, faTrashCan } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const Todo = ({ item, screen }) => {
   const dispatch = useDispatch();
@@ -47,7 +50,7 @@ const Todo = ({ item, screen }) => {
   return (
     <Wrapper onClick={() => setEdit(!edit)} ref={ref}>
       <TodoWrapper color={color}>
-        {item.todo}
+
 
         {edit && (
           <>
@@ -56,23 +59,36 @@ const Todo = ({ item, screen }) => {
                 color="green"
                 onClick={() => updateHandler("completed")}
               >
-                Y
+                <FontAwesomeIcon
+                  icon={faCheckCircle}
+                  color="white"
+                  size="1x"
+                />
               </EditItem>
               <EditItem
                 color="red"
                 onClick={() => dispatch(deleteTodo(item._id))}
               >
-                X
+                <FontAwesomeIcon
+                  icon={faTrashCan}
+                  color="white"
+                  size="1x"
+                />
               </EditItem>
               <EditItem
                 color="orange"
                 onClick={() => updateHandler("important")}
               >
-                C
+                <FontAwesomeIcon
+                  icon={faFlag}
+                  color="white"
+                  size="1x"
+                />
               </EditItem>
             </EditWrapper>
           </>
         )}
+        {item.todo}
       </TodoWrapper>
     </Wrapper>
   );
@@ -94,6 +110,9 @@ const EditWrapper = styled.div`
     display: flex;
     animation: ${zoom} 0.3s forwards;
     border-radius:1.5rem;
+    > *:not(:last-child) {
+    margin-right: 16px;
+  }
 
 `;
 
@@ -104,7 +123,6 @@ opacity: 0.85;
   border-radius: 3rem;
   background-color: ${(props) => (props.color ? props.color : "#cc0000")};
   padding: 4px 12px;
-  margin: 0 8px;
   color: white;
   font-size: 20px;
   font-weight: 900;
@@ -117,7 +135,6 @@ const TodoWrapper = styled.div`
   color: white;
   font-size: 17px;
   margin: 6px 16px;
-  width: auto;
 `;
 
 export default Todo;

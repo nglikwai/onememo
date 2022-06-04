@@ -77,7 +77,6 @@ export const loadedUserReducer = (state = { loading: true, user: null }, action)
                 loading: true,
                 isAuthenticated: false
             }
-
         case LOAD_USER_SUCCESS:
             return {
                 loading: false,

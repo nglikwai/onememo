@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import styled from "styled-components";
 import { getAllTodos } from '../../redux/actions/todoActions'
 
+
 const SearchButton = () => {
 
     const [text, setText] = useState('')
@@ -19,7 +20,7 @@ const SearchButton = () => {
     }, [text])
 
     return (
-        <Button placeholder="=O" value={text} onChange={onChangeHandler} />
+        <Button placeholder="🔎" value={text} onChange={onChangeHandler} />
     )
 }
 
@@ -27,7 +28,7 @@ export default SearchButton
 
 const Button = styled.input`
 &:focus{width:200px; background-color:#444; color:white; font-weight:400}
-  background-color: rgb(57, 120, 57);
+  background-color: transparent;
   border-radius: 3rem;
   border: none;
   padding: 8px;

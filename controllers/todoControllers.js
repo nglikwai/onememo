@@ -198,7 +198,6 @@ const deleteTodo = catchAsyncErrors(async (req, res) => {
 })
 
 const updateTodo = catchAsyncErrors(async (req, res) => {
-    console.log(req.body)
     await Todo.findByIdAndUpdate(req.query.id, req.body, {
         new: true,
         runValidators: true,

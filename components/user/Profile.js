@@ -6,9 +6,10 @@ import ButtonLoader from '../layout/ButtonLoader'
 import Loader from '../layout/Loader'
 
 import { useDispatch, useSelector } from 'react-redux';
-import { updateProfile, clearErrors } from '../../redux/actions/userActions'
+import { updateProfile, clearErrors, loadUser } from '../../redux/actions/userActions'
 import { UPDATE_PROFILE_RESET } from '../../redux/constants/userConstants'
 import styled from 'styled-components'
+import { faCommentsDollar } from '@fortawesome/free-solid-svg-icons'
 
 const colors = ["orange", "grey", "black", "blue", "red", "white"];
 
@@ -36,11 +37,13 @@ const Profile = () => {
     useEffect(() => {
 
         if (loadedUser) {
+
             setUser({
                 name: loadedUser.name,
                 email: loadedUser.email
             })
             setAvatarPreview(loadedUser.avatar.url)
+            setPreference(loadedUser.preference)
         }
 
         if (error) {
@@ -50,7 +53,10 @@ const Profile = () => {
 
         if (isUpdated) {
 
+            router.push('/');
+            dispatch(loadUser())
             dispatch({ type: UPDATE_PROFILE_RESET })
+
         }
 
     }, [dispatch, isUpdated, error, loadedUser])
@@ -62,9 +68,8 @@ const Profile = () => {
         const userData = {
             name, email, password, avatar, preference
         }
-        console.log(userData)
         dispatch(updateProfile(userData))
-        router.push('/');
+
     }
 
     const onChange = (e) => {
@@ -143,43 +148,17 @@ const Profile = () => {
                                 />
                             </div>
 
-                            <div className='form-group'>
-                                <label htmlFor='avatar_upload'>Avatar</label>
-                                <div className='d-flex align-items-center'>
-                                    <div>
-                                        <figure className='avatar mr-3 item-rtl'>
-                                            <img
-                                                src={avatarPreview}
-                                                className='rounded-circle'
-                                                alt='image'
-                                            />
-                                        </figure>
-                                    </div>
-                                    <div className='custom-file'>
-                                        <input
-                                            type='file'
-                                            name='avatar'
-                                            className='custom-file-input'
-                                            id='customFile'
-                                            accept='images/*'
-                                            onChange={onChange}
-                                        />
-                                        <label className='custom-file-label' htmlFor='customFile'>
-                                            Choose Avatar
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
 
 
-                            <button
+
+                            <SubmitButton
                                 id="login_button"
                                 type="submit"
                                 className="btn btn-block py-3"
                                 disabled={updateLoading ? true : false}
                             >
                                 {updateLoading ? <ButtonLoader /> : 'UPDATE'}
-                            </button>
+                            </SubmitButton>
                         </form>
                     </div>
                 </div>
@@ -194,9 +173,10 @@ export default Profile
 
 
 const Wrapper = styled.div`
-    /* background-image: url(/images/background-${props => props.color}.svg);
-    background-size: cover; */
+    background-image: url(/images/background-${props => props.color}.svg);
+    background-size: cover;
     width:100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     margin:20px 0;
@@ -227,4 +207,11 @@ const Input = styled.input`
     border: none;
     border-radius: 1rem;
     margin: 30px 0;
+`
+
+const SubmitButton = styled.button`
+&:hover{opacity:1}
+    border-radius: 2rem;
+    opacity: 0.8;
+    transition: 0.4s;
 `

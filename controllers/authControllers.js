@@ -19,13 +19,15 @@ cloudinary.config({
 // Register user   =>   /api/auth/register
 const registerUser = catchAsyncErrors(async (req, res) => {
 
-    let result = {};
-    result.public_id = 'me_1'
-    result.secure_url = 'https://cdn.flowtheroom.com/qOh2lp-0AGWeBP68yRH5aQ/2ee7f26d-d208-49b1-6fc0-eed2d81ca000/public'
+    let result = {
+        public_id: 'me_1',
+        secure_url: '/images/default_avatar.jpg'
+    }
+
 
     if (req.body.avatar) {
         result = await cloudinary.v2.uploader.upload(req.body.avatar, {
-            folder: 'bookit/avatars',
+            folder: 'ONEMEMO/avatars',
             width: '150',
             crop: 'scale'
         })
@@ -67,7 +69,6 @@ const currentUserProfile = catchAsyncErrors(async (req, res) => {
 const updateProfile = catchAsyncErrors(async (req, res) => {
 
     const user = await User.findById(req.user._id);
-
     if (user) {
         user.name = req.body.name;
         user.email = req.body.email;
@@ -97,7 +98,6 @@ const updateProfile = catchAsyncErrors(async (req, res) => {
     }
 
     await user.save();
-
     res.status(200).json({
         success: true
     })

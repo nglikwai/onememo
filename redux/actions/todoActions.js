@@ -58,30 +58,11 @@ export const createTodo = (todo) => async (dispatch) => {
 }
 
 
-export const getTodo = (text) => async (dispatch) => {
-    try {
-
-        let link = `https://onememo.vercel.app/api/todo`
-        // let link = `http://localhost:3000/api/todo?text=1`
-
-
-        const { data } = await axios.get(link)
-
-        dispatch({
-            type: GET_TODOS_SUCCESS,
-            payload: data.todo
-        })
-
-    } catch (error) {
-        console.log(error)
-    }
-}
-
 export const getAllTodos = (text) => async (dispatch) => {
     try {
 
-        let link = `https://onememo.vercel.app/api/todo?text=${text}`
-        // let link = `http://localhost:3000/api/todo?text=${text}`
+        // let link = `https://onememo.vercel.app/api/todo?text=${text}`
+        let link = `http://localhost:3000/api/todo?text=${text}`
 
 
         const { data } = await axios.get(link)

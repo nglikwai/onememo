@@ -6,6 +6,7 @@ import ButtonLoader from '../layout/ButtonLoader'
 
 import { useDispatch, useSelector } from 'react-redux';
 import { registerUser, clearErrors } from '../../redux/actions/userActions'
+import styled from 'styled-components';
 
 const Register = () => {
 
@@ -80,78 +81,52 @@ const Register = () => {
                         <h1 className="mb-3">Join Us</h1>
 
                         <div className="form-group">
-                            <label htmlFor="name_field">Full Name</label>
-                            <input
+                            <Input
                                 type="text"
                                 id="name_field"
-                                className="form-control"
+
                                 name='name'
                                 value={name}
                                 onChange={onChange}
+                                placeholder='Name'
+
                             />
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="email_field">Email</label>
-                            <input
+                            <Input
                                 type="email"
                                 id="email_field"
-                                className="form-control"
                                 name='email'
                                 value={email}
                                 onChange={onChange}
+                                placeholder='Email'
                             />
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="password_field">Password</label>
-                            <input
+                            <Input
                                 type="password"
                                 id="password_field"
-                                className="form-control"
                                 name='password'
                                 value={password}
                                 onChange={onChange}
+                                placeholder='Password'
+
                             />
                         </div>
 
-                        <div className='form-group'>
-                            <label htmlFor='avatar_upload'>Avatar</label>
-                            <div className='d-flex align-items-center'>
-                                <div>
-                                    <figure className='avatar mr-3 item-rtl'>
-                                        <img
-                                            src={avatarPreview}
-                                            className='rounded-circle'
-                                            alt='image'
-                                        />
-                                    </figure>
-                                </div>
-                                <div className='custom-file'>
-                                    <input
-                                        type='file'
-                                        name='avatar'
-                                        className='custom-file-input'
-                                        id='customFile'
-                                        accept='images/*'
-                                        onChange={onChange}
-                                    />
-                                    <label className='custom-file-label' htmlFor='customFile'>
-                                        Choose Avatar
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
 
 
-                        <button
+
+                        <SubmitButton
                             id="login_button"
                             type="submit"
                             className="btn btn-block py-3"
                             disabled={loading ? true : false}
                         >
                             {loading ? <ButtonLoader /> : 'REGISTER'}
-                        </button>
+                        </SubmitButton>
                     </form>
                 </div>
             </div>
@@ -160,3 +135,25 @@ const Register = () => {
 }
 
 export default Register
+
+
+const Input = styled.input`
+&:focus{    background-color: #555; color:white
+}
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    margin: 30px 0;
+    transition: 0.4s;
+    padding: 12px 20px;
+    margin: 10px 0;
+    width:100%;
+`
+
+const SubmitButton = styled.button`
+&:hover{opacity:1}
+    border-radius: 2rem;
+    opacity: 0.8;
+    transition: 0.4s;
+`

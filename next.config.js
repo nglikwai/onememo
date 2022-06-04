@@ -22,7 +22,7 @@ module.exports = {
     NEXTAUTH_URL: "https://onebook.dse00.com"
   },
   images: {
-    domains: ["cdn.flowtheroom.com"],
+    domains: ["res.cloudinary.com"],
   },
 
 };

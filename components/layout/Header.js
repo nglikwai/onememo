@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
-import { faBars, faMagnifyingGlass, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faGear, faMagnifyingGlass, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
@@ -39,14 +39,7 @@ const Header = () => {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <figure className="avatar avatar-nav">
-                  <img
-                    src={user.avatar && user.avatar.url}
-                    alt={user && user.name}
-                    className="rounded-circle"
-                  />
-
-                </figure>
+                <Avatar src={user.avatar.url} />
               </a>
 
 
@@ -96,10 +89,12 @@ const Header = () => {
 };
 const NavWrapper = styled.div`
 &:hover{background-color: rgba(0,0,0,0.8);}
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.8);
   transition: 0.4s;
   position: fixed;
   width:100%;
+  margin:0;
+  padding-bottom: 0;
 `
 const Name = styled.span`
   font-size: 20px;
@@ -128,6 +123,12 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
+`
+
+const Avatar = styled.img`
+  width:50px;
+  height: 50px;
+  border-radius:50%;
 `
 
 export default Header;
