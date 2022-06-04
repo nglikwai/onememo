@@ -1,32 +1,19 @@
 import axios from 'axios'
-import absoluteUrl from 'next-absolute-url'
 
 import {
-    CHECK_TODO_REQUEST,
-    CHECK_TODO_SUCCESS,
-    CHECK_TODO_FAIL,
-    BOOKED_DATES_SUCCESS,
-    BOOKED_DATES_FAIL,
-    MY_TODOS_SUCCESS,
-    MY_TODOS_FAIL,
-    TODO_DETAILS_SUCCESS,
-    TODO_DETAILS_FAIL,
-    ADMIN_TODOS_REQUEST,
-    ADMIN_TODOS_SUCCESS,
-    ADMIN_TODOS_FAIL,
-    DELETE_TODO_REQUEST,
+
     DELETE_TODO_SUCCESS,
     DELETE_TODO_FAIL,
 
     CLEAR_ERRORS,
-
+    GET_TODOS_REQUEST,
     GET_TODOS_SUCCESS,
 
     NEW_TODO_REQUEST,
     NEW_TODO_SUCCESS,
     NEW_TODO_FAIL,
 
-} from '../constants/bookingConstants'
+} from '../constants/todoConstants'
 
 export const createTodo = (todo) => async (dispatch) => {
     try {
@@ -58,11 +45,17 @@ export const createTodo = (todo) => async (dispatch) => {
 }
 
 
-export const getAllTodos = (text) => async (dispatch) => {
+export const getAllTodos = (text, status = '') => async (dispatch) => {
     try {
 
-        let link = `https://onememo.vercel.app/api/todo?text=${text}`
-        // let link = `http://localhost:3000/api/todo?text=${text}`
+
+        dispatch({
+            type: GET_TODOS_REQUEST,
+        })
+
+
+        // let link = `https://onememo.vercel.app/api/todo?text=${text}`
+        let link = `${window.location.href}api/todo?text=${text}&status=${status}`
 
 
         const { data } = await axios.get(link)

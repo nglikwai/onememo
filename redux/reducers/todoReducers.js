@@ -25,9 +25,7 @@ import {
     NEW_TODO_SUCCESS,
     NEW_TODO_FAIL,
 
-} from '../constants/bookingConstants'
-
-const TodoList = ['hi', 'buy milk', '6252', '12pm, ss, meet terrance gym', 'pw:3123456', 'ac: boc 9294 5929 5929 9592', 'code:0719', 'hi', 'buy milk', '6252', '12pm, ss, meet terrance gym', 'pw:3123456', 'ac: boc 9294 5929 5929 9592', 'code:0719', 'hi', 'buy milk', '6252', '12pm, ss, meet terrance gym', 'pw:3123456', 'ac: boc 9294 5929 5929 9592', 'code:0719']
+} from '../constants/todoConstants'
 
 export const todoReducer = (state = { loading: false, todoList: [] }, action) => {
     switch (action.type) {

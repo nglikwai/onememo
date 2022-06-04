@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
-import { faBars, faGear, faMagnifyingGlass, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faFlag, faGear, faMagnifyingGlass, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
@@ -9,11 +9,13 @@ import { loadUser } from "../../redux/actions/userActions";
 import { signOut } from "next-auth/client";
 import { useTranslation } from 'react-i18next'
 import SearchButton from "../SearchButton";
+import { getAllTodos } from "../../redux/actions/todoActions";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const { t } = useTranslation()
   const dispatch = useDispatch();
-
+  const router = useRouter();
   const { user, loading } = useSelector((state) => state.loadedUser);
 
   useEffect(() => {
@@ -25,6 +27,11 @@ const Header = () => {
   const logoutHandler = () => {
     signOut();
   };
+
+  const importantClick = () => {
+    router.push('/')
+    dispatch(getAllTodos('', 'important'))
+  }
 
   return (
     <NavWrapper className="navbar row justify-content-center sticky-top">
@@ -50,17 +57,38 @@ const Header = () => {
 
 
                 <Link href="/me/update">
-                  <Item className="dropdown-item ">{t('header.profile')}</Item>
+                  <Item className="dropdown-item ">{t('header.profile')}
+                    <FontAwesomeIcon
+                      icon={faGear}
+                      color="white"
+                      size="xs"
+                    /></Item>
                 </Link>
 
-                <Link href="/">
-                  <Item
-                    className="dropdown-item text-danger"
-                    onClick={logoutHandler}
-                  >
-                    {t('header.logout')}
-                  </Item>
-                </Link>
+
+                <Item
+                  className="dropdown-item "
+                  onClick={importantClick}
+                >
+                  {t('header.starred')}
+                  <FontAwesomeIcon
+                    icon={faFlag}
+                    color="orange"
+                    size="xs"
+                  />
+                </Item>
+
+
+
+                {/* 
+                <Item
+                  className="dropdown-item text-danger"
+                  onClick={logoutHandler}
+                >
+                  {t('header.logout')}
+                </Item> */}
+
+
               </DropMenu>
             </div>
           ) : (
@@ -114,6 +142,9 @@ const Item = styled.div`
   font-size: 20px;
   line-height: 200%; 
   color: white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 `
 
 const Wrapper = styled.div`

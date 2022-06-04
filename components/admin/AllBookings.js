@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toast } from 'react-toastify';
 
 import { getAdminBookings, deleteBooking, clearErrors } from '../../redux/actions/todoActions'
-import { DELETE_TODO_RESET } from '../../redux/constants/bookingConstants'
+import { DELETE_TODO_RESET } from '../../redux/constants/todoConstants'
 
 const AllBookings = () => {
 
