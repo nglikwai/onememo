@@ -96,7 +96,9 @@ const Profile = () => {
 
     return (
 
-        <Wrapper color={preference}>
+        <Wrapper>
+            <BackgroundImage color={preference} />
+
             {loading ? <Loader /> :
                 <div className="container container-fluid">
                     <div className="row wrapper">
@@ -173,8 +175,7 @@ export default Profile
 
 
 const Wrapper = styled.div`
-    background-image: url(/images/background-${props => props.color}.svg);
-    background-size: cover;
+
     width:100%;
     height: 100%;
     display: flex;
@@ -215,3 +216,13 @@ const SubmitButton = styled.button`
     opacity: 0.8;
     transition: 0.4s;
 `
+
+const BackgroundImage = styled.div`
+    background-image: url(/images/background-${props => props.color}.svg);
+    background-size: cover;
+    width:100%;
+    height: 100%;
+    position:fixed;
+    z-index: -10;
+    background-size: cover;
+    `

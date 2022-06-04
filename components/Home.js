@@ -63,7 +63,7 @@ const Wrapper = styled.div`
 
 const TodoWrapper = styled.div`
   padding:80px 8px;
-  width: 100%
+  width: 100%;
 `
 
 const BackgroundImage = styled.div`

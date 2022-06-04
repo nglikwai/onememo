@@ -27,13 +27,15 @@ const Writing = () => {
 }
 
 const Textarea = styled.textarea`
-    width:80%;
+&:focus{    background-color: #333;
+}
+    width:85%;
     height: 50px;
     border-radius: 3rem;
     padding:8px 12px;
     font-size: 20px;
     line-height: 110%;
-    background-color: #444;
+    background-color: #222;
     color:white;
 `
 
