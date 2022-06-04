@@ -48,12 +48,12 @@ const SubmitButton = styled.button`
     background-color: rgb(46, 80, 124);
     border: none;
     border-radius: 50%;
-    width:40px;
     height:40px;
     font-size: 26px;
     font-weight: 900;
     display:flex;
     align-items: center;
+    justify-content: center;
     margin-left:10px
 `
 
