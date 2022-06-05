@@ -1,5 +1,5 @@
 import User from '../models/user'
-import Todo from '../models/Todo'
+import Todo from '../models/todo'
 
 import catchAsyncErrors from '../middlewares/catchAsyncErrors'
 
