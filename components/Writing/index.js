@@ -77,7 +77,7 @@ const Writing = ({ bottomRef }) => {
 const Textarea = styled.textarea`
 &:focus{    background-color: #333;
 }
-    width:75%;
+    width:80%;
     height: 40px;
     border-radius: 3rem;
     padding: 10px 12px;
