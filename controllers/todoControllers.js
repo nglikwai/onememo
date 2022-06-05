@@ -1,4 +1,3 @@
-import Room from '../models/room'
 import Todo from '../models/todo'
 
 import cloudinary from 'cloudinary'

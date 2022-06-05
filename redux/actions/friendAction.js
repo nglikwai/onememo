@@ -17,7 +17,7 @@ export const searchUser = (name) => async (dispatch) => {
             type: GET_FRIENDS_REQUEST,
         })
 
-        let link = `http://localhost:3000/api/friend/add?name=${name}`
+        let link = `https://onememo.vercel.app/api/friend/add?name=${name}`
 
 
         const { data } = await axios.get(link)
@@ -38,7 +38,7 @@ export const addFriend = (name) => async (dispatch) => {
             type: ADD_FRIEND_REQUEST,
         })
 
-        let link = `http://localhost:3000/api/friend/add?name=${name}`
+        let link = `https://onememo.vercel.app/api/friend/add?name=${name}`
 
 
         const { data } = await axios.put(link)
@@ -59,7 +59,7 @@ export const sendFriend = (name, text) => async (dispatch) => {
             type: SEND_FRIEND_REQUEST,
         })
 
-        let link = `http://localhost:3000/api/friend/add?name=${name}&text=${text}`
+        let link = `https://onememo.vercel.app/api/friend/add?name=${name}&text=${text}`
 
 
         const { data } = await axios.post(link)
