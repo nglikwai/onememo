@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
-import { faBars, faFlag, faGear, faMagnifyingGlass, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faFlag, faGear, faMagnifyingGlass, faRotate, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
@@ -77,6 +77,16 @@ const Header = () => {
                     size="xs"
                   />
                 </Item>
+
+                <a href="/">
+                  <Item className="dropdown-item ">{t('header.refresh')}
+                    <FontAwesomeIcon
+                      icon={faRotate}
+                      color="white"
+                      size="xs"
+                    /></Item>
+                </a>
+
 
 
 

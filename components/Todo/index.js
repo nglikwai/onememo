@@ -93,6 +93,8 @@ const Todo = ({ item, screen }) => {
           </>
         )}
         {item.todo}
+        {edit && <DateItem>{item.createdAt.substring(5, 10)}</DateItem>
+        }
       </TodoWrapper>
     </Wrapper>
   );
@@ -120,6 +122,11 @@ const EditWrapper = styled.div`
 
 `;
 
+const DateItem = styled.span`
+  color:#ccc;
+  font-size: 12px;
+  padding-left:8px;
+`
 
 const EditItem = styled.div`
 &:hover{opacity:1}

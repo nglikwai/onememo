@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 
 import styled from "styled-components";
 import Writing from "./Writing";
-
+import Loader from "./layout/Loader";
 
 
 const Home = () => {
@@ -35,16 +35,14 @@ const Home = () => {
       <TodoWrapper>
 
 
-        {todoList ?
+        {todoList.length > 0 ?
           <>
             {todoList.map(todo => (
               <Todo key={todo.createdAt} item={todo}></Todo>)
             )}
           </>
           :
-          <>
-            loading
-          </>
+          <Loader />
         }
       </TodoWrapper >
       <Writing bottomRef={bottomRef} />

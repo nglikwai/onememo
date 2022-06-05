@@ -58,7 +58,8 @@
       "profile":"設定",
       "logout":"登出",
       "login":"登入",
-      "starred":"重要"
+      "starred":"重要",
+      "refresh":"更新"
     },
     "login":{
       "login":"登入",
