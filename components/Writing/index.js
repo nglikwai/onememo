@@ -105,7 +105,7 @@ const SubmitButton = styled.button`
 const Wrapper = styled.div`
     position: fixed;
     bottom:0px;
-    padding:12px 20px;
+    padding:12px 8px;
     opacity: 0.9;
     color: white;
     font-size: 24px;
