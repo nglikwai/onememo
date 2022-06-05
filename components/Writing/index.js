@@ -45,7 +45,7 @@ const Textarea = styled.textarea`
 
 const SubmitButton = styled.button`
     color:white;
-    background-color: rgb(46, 80, 124);
+    background-color: rgb(46, 80, 124,0);
     border: none;
     border-radius: 50%;
     width:40px;
