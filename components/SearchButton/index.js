@@ -7,17 +7,28 @@ import { getAllTodos } from '../../redux/actions/todoActions'
 const SearchButton = () => {
 
     const [text, setText] = useState('')
+    const [delayedText, setDelayedText] = useState('')
+
     const dispatch = useDispatch()
 
     const onChangeHandler = (e) => {
         setText(e.target.value)
     }
 
+    useEffect(() => {
+        const timeId = setTimeout(() => {
+            setDelayedText(text)
+        }, 400)
+
+        return () => {
+            clearTimeout(timeId)
+        }
+    }, [text])
 
 
     useEffect(() => {
-        dispatch(getAllTodos(text))
-    }, [text])
+        dispatch(getAllTodos(delayedText))
+    }, [delayedText])
 
     return (
         <Button placeholder="🔎" value={text} onChange={onChangeHandler} text={text.length > 1 ? true : false} />

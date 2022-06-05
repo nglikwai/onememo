@@ -62,12 +62,12 @@ const Wrapper = styled.div`
 
 const SearchFriend = styled.input`
 &:focus{width:100%; background-color:rgba(50,50,50,0.5); color:white; }
-&::placeholder{color:#555}
+&::placeholder{color:#555; }
   background-color: transparent;
   border: none;
   border-bottom:1px solid rgba(50,50,50,1);
-
-  padding: 8px;
+  font-size:20px;
+  padding:8px 20px;
   width:100%;
   height:70px;
   transition: 0.3s;
@@ -78,11 +78,4 @@ const FriendWrapper = styled.div`
 
 `
 
-const SearchWrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right:20px;
-
-`
 
