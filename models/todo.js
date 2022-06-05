@@ -11,6 +11,9 @@ const todoSchema = new mongoose.Schema({
         ref: 'User',
         required: true
     },
+    from: {
+        type: String
+    },
     status: {
         type: String,
         enum: {

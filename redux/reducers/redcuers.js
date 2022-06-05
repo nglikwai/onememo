@@ -2,7 +2,8 @@ import { combineReducers } from 'redux';
 
 import { authReducer, userReducer, loadedUserReducer, forgotPasswordReducer, allUsersReducer, userDetailsReducer } from './userReducers'
 
-import { checktodoReducer, bookedDatesReducer, bookingsReducer, bookingDetailsReducer, todoReducer } from './todoReducers'
+import { todoReducer } from './todoReducers'
+import { searchUserReducer } from './friendReducers';
 
 const reducer = combineReducers({
 
@@ -11,7 +12,7 @@ const reducer = combineReducers({
     loadedUser: loadedUserReducer,
     allUsers: allUsersReducer,
     userDetails: userDetailsReducer,
-
+    searchUser: searchUserReducer,
     todo: todoReducer,
 
 

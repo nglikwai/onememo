@@ -35,5 +35,18 @@ const seedTodos = async () => {
     }
 }
 
-seedTodos()
+// const updateAll = async () => {
+//     try {
+//         Todo.updateMany({}, { avatar})
+
+//         console.log('All updated.');
+
+//         process.exit()
+//     } catch (error) {
+//         console.log(error.message);
+//         process.exit()
+//     }
+// }
+
+// updateAll()
 

@@ -55,6 +55,14 @@ const Header = () => {
                 aria-labelledby="dropDownMenuButton"
               >
 
+                <Link href="/addfriend">
+                  <Item className="dropdown-item ">{t('header.add-friend')}
+                    <FontAwesomeIcon
+                      icon={faUser}
+                      color="white"
+                      size="xs"
+                    /></Item>
+                </Link>
 
                 <Link href="/me/update">
                   <Item className="dropdown-item ">{t('header.profile')}
@@ -86,6 +94,8 @@ const Header = () => {
                       size="xs"
                     /></Item>
                 </a>
+
+
 
 
 

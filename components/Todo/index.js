@@ -92,7 +92,7 @@ const Todo = ({ item, screen }) => {
             </EditWrapper>
           </>
         )}
-        {item.todo}
+        {item.from && <From>{item.from} - </From>}{item.todo}
         {edit && <DateItem>{item.createdAt.substring(5, 10)}</DateItem>
         }
       </TodoWrapper>
@@ -147,5 +147,10 @@ const TodoWrapper = styled.div`
   font-size: 17px;
   margin: 6px 16px;
 `;
+
+const From = styled.span`
+  color:#aaa;
+  font-size: 14px;
+`
 
 export default Todo;
