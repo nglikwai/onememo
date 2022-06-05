@@ -43,7 +43,7 @@ const Writing = ({ bottomRef }) => {
             document.removeEventListener('mousedown', handler)
             document.removeEventListener('touchstart', handler)
         }
-    }, [open])
+    }, [friendListOpen])
 
 
     return (
