@@ -85,7 +85,7 @@ const Textarea = styled.textarea`
     line-height: 110%;
     background-color: #222;
     color:white;
-    margin-left: 10px;
+    margin:0 12px;
 `
 
 const SubmitButton = styled.button`
