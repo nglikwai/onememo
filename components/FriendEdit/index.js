@@ -17,11 +17,6 @@ const FriendEdit = ({ friend }) => {
         <Wrapper>
             <Item onClick={removeAction}>
                 <Action>移除好友</Action>
-                <FontAwesomeIcon
-                    icon={faXmark}
-                    color='red'
-                    size='lg'
-                />
             </Item>
 
         </Wrapper>
@@ -36,7 +31,7 @@ export default FriendEdit;
 
 
 const Wrapper = styled.div`
-    right: 5%;
+    right: 0;
     position: fixed;
     border-radius:1rem;
     padding:12px;

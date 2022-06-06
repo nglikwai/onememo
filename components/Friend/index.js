@@ -51,7 +51,7 @@ const Friend = ({ friend }) => {
                     size="lg"
                     onClick={addFriendClick}
                 /> : ""}
-            {added && <Added>added</Added>}
+
             {
                 friendEditOpen && <FriendEdit friend={friend} />
             }
