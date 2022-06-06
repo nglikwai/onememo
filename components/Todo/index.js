@@ -92,7 +92,7 @@ const Todo = ({ item, screen }) => {
             </EditWrapper>
           </>
         )}
-        {item.from && <From>{item.from} - </From>}{item.todo}
+        {item.from && <From>{item.from} - </From>}{item.todo}{item.to && <From> - {item.to}</From>}
         {edit && <DateItem>{item.createdAt.substring(5, 10)}</DateItem>
         }
       </TodoWrapper>

@@ -15,9 +15,9 @@ import {
 
 } from '../constants/todoConstants'
 
-export const createTodo = (todo) => async (dispatch) => {
+export const createTodo = (todo, to = '') => async (dispatch) => {
     try {
-        const data = { 'todo': todo, "createdAt": Date() }
+        const data = { 'todo': todo, "createdAt": Date(), to }
         dispatch({ type: NEW_TODO_REQUEST });
 
         dispatch({
@@ -27,9 +27,10 @@ export const createTodo = (todo) => async (dispatch) => {
 
 
         const config = {
-            header: {
+            headers: {
                 'Content-Type': 'application/json'
-            }
+            },
+
         }
 
         await axios.put(`/api/todo`, data, config)

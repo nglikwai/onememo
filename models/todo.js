@@ -14,6 +14,9 @@ const todoSchema = new mongoose.Schema({
     from: {
         type: String
     },
+    to: {
+        type: String
+    },
     status: {
         type: String,
         enum: {

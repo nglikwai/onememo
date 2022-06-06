@@ -22,7 +22,7 @@ const Writing = ({ bottomRef }) => {
 
     const crossSubmitHandler = (friend, text) => {
         bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
-        dispatch(createTodo(text))
+        dispatch(createTodo(text, friend))
         dispatch(sendFriend(friend, text))
         setText('')
         setFriendListOpen(false)
