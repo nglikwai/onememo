@@ -12,6 +12,7 @@ import {
     NEW_TODO_REQUEST,
     NEW_TODO_SUCCESS,
     NEW_TODO_FAIL,
+    NEW_TODO_REPLACE
 
 } from '../constants/todoConstants'
 
@@ -21,6 +22,11 @@ export const createTodo = (todo, to = '') => async (dispatch) => {
         dispatch({ type: NEW_TODO_REQUEST });
 
 
+
+        dispatch({
+            type: NEW_TODO_SUCCESS,
+            payload: data
+        })
 
         const config = {
             headers: {
@@ -33,7 +39,7 @@ export const createTodo = (todo, to = '') => async (dispatch) => {
 
 
         dispatch({
-            type: NEW_TODO_SUCCESS,
+            type: NEW_TODO_REPLACE,
             payload: result.data.todo
         })
 

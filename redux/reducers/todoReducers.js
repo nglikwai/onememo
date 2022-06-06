@@ -24,6 +24,7 @@ import {
     NEW_TODO_REQUEST,
     NEW_TODO_SUCCESS,
     NEW_TODO_FAIL,
+    NEW_TODO_REPLACE
 
 } from '../constants/todoConstants'
 
@@ -45,7 +46,11 @@ export const todoReducer = (state = { loading: false, todoList: [] }, action) =>
                 loading: false,
                 todoList: [...state.todoList, action.payload]
             }
-
+        case NEW_TODO_REPLACE:
+            return {
+                loading: false,
+                todoList: [...state.todoList.filter(item => item._id), action.payload]
+            }
         case NEW_TODO_FAIL:
             return {
                 loading: false,
