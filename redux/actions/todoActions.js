@@ -20,10 +20,6 @@ export const createTodo = (todo, to = '') => async (dispatch) => {
         const data = { 'todo': todo, "createdAt": Date(), to }
         dispatch({ type: NEW_TODO_REQUEST });
 
-        dispatch({
-            type: NEW_TODO_SUCCESS,
-            payload: data
-        })
 
 
         const config = {
@@ -33,7 +29,13 @@ export const createTodo = (todo, to = '') => async (dispatch) => {
 
         }
 
-        await axios.put(`/api/todo`, data, config)
+        const result = await axios.put(`/api/todo`, data, config)
+
+
+        dispatch({
+            type: NEW_TODO_SUCCESS,
+            payload: result.data.todo
+        })
 
 
     } catch (error) {

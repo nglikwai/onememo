@@ -6,9 +6,7 @@ import Layout from '../../components/layout/Layout'
 
 const UpdateProfilePage = () => {
     return (
-        <Layout title='Update Profile'>
-            <Profile />
-        </Layout>
+        <Profile />
     )
 }
 

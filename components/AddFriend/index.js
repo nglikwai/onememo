@@ -56,6 +56,7 @@ const AddFriend = () => {
 
 export default AddFriend
 
+
 const Wrapper = styled.div`
     padding: 80px 0 ;
 `

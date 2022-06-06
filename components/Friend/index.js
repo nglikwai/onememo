@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import styled from "styled-components";
 import { addFriend } from '../../redux/actions/friendAction'
-import { faBars, faFlag, faGear, faMagnifyingGlass, faPlus, faRotate, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Friend = ({ friend }) => {
@@ -15,7 +15,10 @@ const Friend = ({ friend }) => {
     }
 
     return (
+
         <Wrapper>
+
+
             <Name>{friend}</Name>
             {!added && user && !user.friendList.includes(friend) ?
                 <FontAwesomeIcon
@@ -26,11 +29,17 @@ const Friend = ({ friend }) => {
                 /> : ""}
             {added && <Added>added</Added>}
 
+
         </Wrapper>
+
+
+
     )
 }
 
-export default Friend
+export default Friend;
+
+
 
 const Wrapper = styled.div`
 &:hover{background-color:rgba(50,50,50,0.5)}
@@ -50,3 +59,10 @@ const Name = styled.span`
 const Added = styled.span`
     color: #333;
 `
+
+
+const friendEditWrapper = styled.div`
+    width:100%;
+    height:200px;
+`
+

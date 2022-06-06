@@ -26,6 +26,7 @@ const Writing = ({ bottomRef }) => {
         dispatch(sendFriend(friend, text))
         setText('')
         setFriendListOpen(false)
+
     }
 
     useEffect(() => {
