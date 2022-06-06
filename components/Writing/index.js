@@ -57,17 +57,19 @@ const Writing = ({ bottomRef }) => {
                     ))}
                 </Friends>}
 
-            <SubmitButton onClick={() => setFriendListOpen(!friendListOpen)} disabled={text ? false : true}>
+            <SubmitButton onClick={() => setFriendListOpen(!friendListOpen)} disabled={text ? false : true} >
                 <FontAwesomeIcon
                     icon={faReply}
-                    color="white"
+                    color={text ? 'white' : '#333'}
                     size="xs"
                 /></SubmitButton>
+
+
             <Textarea onChange={(e) => setText(e.target.value)} value={text}></Textarea>
             <SubmitButton onClick={submitHandler} disabled={text ? false : true}>
                 <FontAwesomeIcon
                     icon={faPaperPlane}
-                    color="white"
+                    color={text ? 'white' : '#333'}
                     size="xs"
                 /></SubmitButton>
         </Wrapper >
@@ -89,7 +91,6 @@ const Textarea = styled.textarea`
 `
 
 const SubmitButton = styled.button`
-    color:white;
     background-color: rgb(46, 80, 124,0);
     border: none;
     border-radius: 50%;
