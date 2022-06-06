@@ -18,12 +18,25 @@ const addFriend = catchAsyncErrors(async (req, res) => {
     user.friendList.push(name)
     await user.save()
     const friend = await User.findOne({ name })
-    console.log(friend)
     friend.friendList.push(user.name)
     await friend.save()
     res.status(200).json({ success: true })
-
 })
+
+const removeFriend = catchAsyncErrors(async (req, res) => {
+    let { name } = req.query
+    const user = await User.findById(req.user._id)
+    const index = user.friendList.indexOf(name)
+    user.friendList.splice(index, 1)
+    await user.save()
+
+    const friend = await User.findOne({ name })
+    const friendIndex = friend.friendList.indexOf(req.user.name)
+    friend.friendList.splice(friendIndex, 1)
+    await friend.save()
+    res.status(200).json({ success: true })
+})
+
 
 const sendFriend = catchAsyncErrors(async (req, res) => {
     let { name, text } = req.query
@@ -37,5 +50,6 @@ const sendFriend = catchAsyncErrors(async (req, res) => {
 export {
     searchUser,
     addFriend,
-    sendFriend
+    sendFriend,
+    removeFriend
 }

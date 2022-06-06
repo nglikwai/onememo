@@ -30,10 +30,17 @@ import {
     DELETE_USER_RESET,
     DELETE_USER_FAIL,
 
+
+
     CLEAR_ERRORS
+
 
 } from '../constants/userConstants'
 
+import {
+    REMOVE_FRIEND_REQUEST,
+    REMOVE_FRIEND_SUCCESS,
+} from '../constants/friendConstants'
 
 // Auth reducer
 export const authReducer = (state = { user: null }, action) => {
@@ -71,7 +78,7 @@ export const authReducer = (state = { user: null }, action) => {
 // Load user reducer
 export const loadedUserReducer = (state = { loading: true, user: null }, action) => {
     switch (action.type) {
-
+        case REMOVE_FRIEND_REQUEST:
         case LOAD_USER_REQUEST:
             return {
                 loading: true,

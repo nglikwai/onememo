@@ -8,7 +8,10 @@ import {
     ADD_FRIEND_SUCCESS,
 
     SEND_FRIEND_REQUEST,
-    SEND_FRIEND_SUCCESS
+    SEND_FRIEND_SUCCESS,
+
+    REMOVE_FRIEND_SUCCESS,
+    REMOVE_FRIEND_REQUEST
 } from "../constants/friendConstants"
 
 export const searchUser = (name) => async (dispatch) => {
@@ -68,6 +71,27 @@ export const sendFriend = (name, text) => async (dispatch) => {
             type: SEND_FRIEND_SUCCESS,
             payload: data.success
         })
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+
+export const removeFriend = (name) => async (dispatch) => {
+    try {
+        dispatch({
+            type: REMOVE_FRIEND_REQUEST,
+        })
+
+        let link = `https://onememo.vercel.app/api/friend/add?name=${name}`
+        // let link = `http://localhost:3000/api/friend/add?name=${name}`
+
+        await axios.delete(link)
+        dispatch({
+            type: REMOVE_FRIEND_SUCCESS,
+        })
+        location.reload()
 
     } catch (error) {
         console.log(error)

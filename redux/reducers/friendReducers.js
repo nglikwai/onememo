@@ -1,12 +1,11 @@
 import {
     GET_FRIENDS_REQUEST,
     GET_FRIENDS_SUCCESS,
-    CLEAR_ERRORS
+    CLEAR_ERRORS,
 } from "../constants/friendConstants"
 
 export const searchUserReducer = (state = { user: [] }, action) => {
     switch (action.type) {
-
         case GET_FRIENDS_REQUEST:
             return {
                 loading: true

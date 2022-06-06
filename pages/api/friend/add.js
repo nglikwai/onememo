@@ -1,6 +1,6 @@
 import nc from 'next-connect'
 import dbConnect from '../../../config/dbConnect'
-import { addFriend, searchUser, sendFriend } from '../../../controllers/friendControllers'
+import { addFriend, searchUser, sendFriend, removeFriend } from '../../../controllers/friendControllers'
 import onError from '../../../middlewares/errors'
 import { isAuthenticatedUser } from '../../../middlewares/auth'
 
@@ -21,6 +21,10 @@ handler
 handler
     .use(isAuthenticatedUser)
     .post(sendFriend)
+
+handler
+    .use(isAuthenticatedUser)
+    .delete(removeFriend)
 
 
 export default handler;
