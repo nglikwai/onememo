@@ -21,7 +21,7 @@ const registerUser = catchAsyncErrors(async (req, res) => {
 
     let result = {
         public_id: 'me_1',
-        secure_url: '/images/default_avatar.jpg'
+        secure_url: '/images/icon.png'
     }
 
 

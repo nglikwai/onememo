@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import styled from "styled-components";
 import { getAllTodos } from '../../redux/actions/todoActions'
@@ -19,9 +19,12 @@ const SearchButton = () => {
         const timeId = setTimeout(() => {
             setDelayedText(text)
         }, 400)
-
+        const intervalId = setInterval(() => {
+            dispatch(getAllTodos(text))
+        }, 60000);
         return () => {
             clearTimeout(timeId)
+            clearInterval(intervalId)
         }
     }, [text])
 
@@ -29,6 +32,11 @@ const SearchButton = () => {
     useEffect(() => {
         dispatch(getAllTodos(delayedText))
     }, [delayedText])
+
+
+
+
+
 
     return (
         <Button placeholder="🔎" value={text} onChange={onChangeHandler} text={text.length > 1 ? true : false} />

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled, { keyframes } from "styled-components";
-import { deleteTodo, getAllTodos, updateTodo } from "../../redux/actions/todoActions";
+import { deleteTodo, updateTodo } from "../../redux/actions/todoActions";
 import { useDispatch } from "react-redux";
 import { faCheckCircle, faFlag, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import styled from "styled-components";
-import { getAllTodos } from '../../redux/actions/todoActions'
 import Friend from '../Friend';
 
 import { searchUser } from '../../redux/actions/friendAction';
