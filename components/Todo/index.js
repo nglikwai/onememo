@@ -6,7 +6,7 @@ import { faCheckCircle, faFlag, faTrashCan } from "@fortawesome/free-solid-svg-i
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-const Todo = ({ item, screen }) => {
+const Todo = ({ item }) => {
   const dispatch = useDispatch();
   const [edit, setEdit] = useState(false);
   const [color, setColor] = useState("rgb(57, 120, 57)");
@@ -146,6 +146,8 @@ const TodoWrapper = styled.div`
   color: white;
   font-size: 17px;
   margin: 6px 16px;
+  max-width:95%;
+
 `;
 
 const From = styled.span`
